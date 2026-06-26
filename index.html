@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvic Gonzales | Ray White Manukau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">ARVIC <span>GONZALES</span></a>
+    <nav class="main-nav">
+      <a href="#listings">Listings</a>
+      <a href="#sold">Recently Sold</a>
+      <a href="#office-listings">Office Listings</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#contact" class="btn btn-outline">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Selling Manukau Homes<br>With Local Expertise</h1>
+    <p>Arvic Gonzales — your trusted Ray White Manukau real estate agent</p>
+
+    <form class="search-bar" action="#listings">
+      <select>
+        <option>Buy</option>
+        <option>Rent</option>
+        <option>Sold</option>
+      </select>
+      <input type="text" placeholder="Suburb, address or postcode">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><strong>120+</strong><span>Properties Sold</span></div>
+    <div class="stat"><strong>10+</strong><span>Years Experience</span></div>
+    <div class="stat"><strong>4.9★</strong><span>Client Rating</span></div>
+    <div class="stat"><strong>24/7</strong><span>Support</span></div>
+  </div>
+</section>
+
+<section id="listings" class="listings reveal">
+  <div class="container">
+    <h2>Featured Listings</h2>
+    <p class="section-sub">Currently active homes on the market (live from our office feed)</p>
+
+    <div class="listing-grid" id="featured-listing-grid"></div>
+    <p class="section-note">Live listing data pulled from <a href="https://rwmanukau.co.nz/" target="_blank" rel="noopener">rwmanukau.co.nz</a> — photos are hosted behind Ray White's authenticated image service and aren't shown here; click through to view full listing photos.</p>
+  </div>
+</section>
+
+<section id="sold" class="listings sold reveal">
+  <div class="container">
+    <h2>Recently Sold</h2>
+    <p class="section-sub">Sales from the last 6 months across Manukau and surrounding suburbs</p>
+
+    <div class="listing-grid" id="featured-sold-grid"></div>
+    <div class="show-more-wrap">
+      <button class="btn btn-outline-dark" id="sold-show-more">Show More</button>
+    </div>
+    <p class="section-note">Live sold data pulled from <a href="https://rwmanukau.co.nz/properties/sold" target="_blank" rel="noopener">rwmanukau.co.nz</a>, filtered to the last 6 months. Want a specific suburb? Use the <a href="#office-listings">Office Listings</a> filter below.</p>
+  </div>
+</section>
+
+<section id="office-listings" class="office-listings reveal">
+  <div class="container">
+    <h2>Ray White Manukau Office Listings</h2>
+    <p class="section-sub">Browse current listings and sales from the last 6 months by location</p>
+
+    <div class="office-filters">
+      <select id="office-suburb-select">
+        <option value="all">All Locations</option>
+      </select>
+      <div class="status-pills">
+        <button class="filter-btn active" data-status="all">All</button>
+        <button class="filter-btn" data-status="for-sale">For Sale</button>
+        <button class="filter-btn" data-status="sold">Sold</button>
+      </div>
+    </div>
+
+    <p class="results-count" id="office-results-count"></p>
+
+    <div class="listing-grid" id="office-listing-grid"></div>
+
+    <div class="pagination" id="office-pagination">
+      <button class="page-btn" id="office-prev-page">← Previous</button>
+      <span class="page-indicator" id="office-page-indicator"></span>
+      <button class="page-btn" id="office-next-page">Next →</button>
+    </div>
+
+    <p class="section-note">Live listings pulled directly from Ray White Manukau's office feed at rwmanukau.co.nz. Sold results are limited to the last 6 months.</p>
+    <div class="office-link-cta">
+      <a href="https://rwmanukau.co.nz/properties/for-sale" target="_blank" rel="noopener" class="btn btn-outline-dark">View All Listings on rwmanukau.co.nz</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about reveal">
+  <div class="container about-inner">
+    <div class="about-photo"></div>
+    <div class="about-text">
+      <h2>About Arvic Gonzales</h2>
+      <p>Arvic is a dedicated real estate agent at Ray White Manukau, helping families across South Auckland buy, sell, and invest in property with confidence. With deep local market knowledge and a client-first approach, Arvic delivers results backed by the trusted Ray White network.</p>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> 021 106 7411</p>
+        <p><strong>Email:</strong> arvic.gonzales@raywhite.com</p>
+        <p><strong>Address:</strong> 603 Great South Road, Manukau City</p>
+      </div>
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services reveal">
+  <div class="container">
+    <h2>How I Can Help</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Selling</h3>
+        <p>Maximise your sale price with tailored marketing and negotiation expertise.</p>
+      </div>
+      <div class="service-card">
+        <h3>Buying</h3>
+        <p>Find the right home for your family with guided support from search to settlement.</p>
+      </div>
+      <div class="service-card">
+        <h3>Appraisals</h3>
+        <p>Get an accurate, no-obligation appraisal of your property's current market value.</p>
+      </div>
+      <div class="service-card">
+        <h3>Investing</h3>
+        <p>Build your portfolio with informed advice on Manukau's growth suburbs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews reveal">
+  <div class="container">
+    <h2>Client Reviews</h2>
+    <p class="section-sub">Verified reviews from clients on RateMyAgent</p>
+    <div class="reviews-cta">
+      <p class="rating-highlight">4.9 ★ average rating</p>
+      <a href="https://www.ratemyagent.co.nz/real-estate-agent/arvic-gonzales" target="_blank" rel="noopener" class="btn btn-primary">View My Reviews on RateMyAgent</a>
+    </div>
+  </div>
+</section>
+
+<section id="instagram" class="instagram reveal">
+  <div class="container">
+    <h2>Follow Along on Instagram</h2>
+    <p class="section-sub">Latest listings, open homes, and behind-the-scenes posts</p>
+    <div class="instagram-grid">
+      <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="ig-post placeholder-1"></a>
+      <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="ig-post placeholder-2"></a>
+      <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="ig-post placeholder-3"></a>
+      <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="ig-post placeholder-1"></a>
+    </div>
+    <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="btn btn-outline-dark">Follow on Instagram</a>
+  </div>
+</section>
+
+<section id="contact" class="contact reveal">
+  <div class="container contact-inner">
+    <div class="contact-text">
+      <h2>Let's Talk Property</h2>
+      <p>Whether you're buying, selling, or just want a free appraisal — get in touch today.</p>
+      <p><strong>Phone:</strong> 021 106 7411</p>
+      <p><strong>Email:</strong> arvic.gonzales@raywhite.com</p>
+      <p><strong>Office:</strong> Ray White Manukau</p>
+      <p><strong>Address:</strong> 603 Great South Road, Manukau City</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone">
+      <textarea placeholder="Message" rows="4"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Arvic Gonzales — Ray White Manukau. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="listings-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
