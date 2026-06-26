@@ -96,7 +96,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; }
 /* Hero */
 .hero {
   position: relative;
-  min-height: 600px;
+  min-height: 680px;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #2b2b2b, #4a4a4a);
@@ -174,7 +174,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; }
 .stat span { font-size: 14px; opacity: 0.8; }
 
 /* Section generic */
-section { padding: 80px 0; }
+section { padding: 68px 0; }
 section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
 .section-sub { text-align: center; color: var(--grey); max-width: 600px; margin: 0 auto 50px; }
 
@@ -192,8 +192,8 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 .listing-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.1);
 }
 .listing-card.is-hidden {
   display: none;
@@ -203,9 +203,9 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
   height: 200px;
   position: relative;
 }
-.placeholder-1 { background: linear-gradient(135deg, #3a3a3a, #111); }
-.placeholder-2 { background: linear-gradient(135deg, #555, #1a1a1a); }
-.placeholder-3 { background: linear-gradient(135deg, #2b2b2b, #000); }
+.placeholder-1 { background: linear-gradient(135deg, #3a3326, #15140f 70%, #f2c200 140%); }
+.placeholder-2 { background: linear-gradient(135deg, #4a4030, #15140f 70%, #f2c200 140%); }
+.placeholder-3 { background: linear-gradient(135deg, #2b2620, #000 70%, #f2c200 140%); }
 .tag {
   position: absolute;
   top: 12px; left: 12px;
@@ -216,7 +216,7 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
   padding: 4px 10px;
   border-radius: 3px;
 }
-.listing-body { padding: 20px; }
+.listing-body { padding: 24px; }
 .card-address {
   color: var(--dark);
   font-size: 17px;
@@ -269,7 +269,7 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
 .about-photo {
   height: 400px;
   border-radius: 6px;
-  background: linear-gradient(135deg, #444, #1a1a1a);
+  background: linear-gradient(135deg, #4a4030, #15140f 70%, #f2c200 140%);
 }
 .about-text h2 { text-align: left; margin-bottom: 16px; }
 .about-text p { margin-bottom: 20px; color: var(--grey); }
@@ -293,8 +293,8 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
 .service-card h3 { color: var(--red); margin-bottom: 10px; }
 .service-card p { color: var(--grey); font-size: 14px; }
 .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.1);
 }
 
 /* Office Listings */
