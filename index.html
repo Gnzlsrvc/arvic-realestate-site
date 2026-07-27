@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arvic Gonzales | Ray White Manukau</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#" class="logo">ARVIC <span>GONZALES</span></a>
+    <a href="#" class="logo">Arvic Gonzales<span>Ray White Manukau</span></a>
     <nav class="main-nav">
       <a href="#listings">Listings</a>
       <a href="#sold">Recently Sold</a>
@@ -21,43 +22,30 @@
       <a href="#reviews">Reviews</a>
       <a href="#team">Team</a>
       <a href="#instagram">Instagram</a>
-      <a href="#contact" class="btn btn-outline">Contact</a>
+      <a href="#contact" class="btn btn-primary">Free appraisal</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="hero-overlay"></div>
   <div class="container hero-content">
-    <div class="hero-eyebrow"><span class="hero-eyebrow-rule"></span>Manukau, NZ</div>
-    <h1>Selling Manukau Homes<br>With Local Expertise</h1>
-    <p>Arvic Gonzales — your trusted Ray White Manukau real estate agent</p>
-
-    <form class="search-bar" action="#listings">
-      <select>
-        <option>Buy</option>
-        <option>Rent</option>
-        <option>Sold</option>
-      </select>
-      <input type="text" placeholder="Suburb, address or postcode">
-      <button type="submit">Search</button>
-    </form>
-  </div>
-</section>
-
-<section class="stats">
-  <div class="container stats-grid">
-    <div class="stat"><strong>120+</strong><span>Properties Sold</span></div>
-    <div class="stat"><strong>10+</strong><span>Years Experience</span></div>
-    <div class="stat"><strong>4.9★</strong><span>Client Rating</span></div>
-    <div class="stat"><strong>24/7</strong><span>Support</span></div>
+    <div class="hero-eyebrow"><span class="hero-eyebrow-rule"></span>Manukau, South Auckland</div>
+    <h1>Selling Manukau homes,<br><em>done properly.</em></h1>
+    <p>Arvic Gonzales gives you a straight read on what your home is worth and a campaign that gets it sold. Free appraisal, no pressure.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Sell your house</a>
+      <a href="#team" class="btn btn-outline">Meet the team</a>
+    </div>
   </div>
 </section>
 
 <section id="listings" class="listings reveal">
   <div class="container">
-    <h2>Featured Listings</h2>
-    <p class="section-sub">Currently active homes on the market (live from our office feed)</p>
+    <div class="section-head">
+      <p class="eyebrow">Now selling</p>
+      <h2>Homes on the market.</h2>
+      <p class="section-sub">Currently active listings, live from the Ray White Manukau office feed.</p>
+    </div>
 
     <div class="listing-grid" id="featured-listing-grid"></div>
     <p class="section-note">Live listing data pulled from <a href="https://rwmanukau.co.nz/" target="_blank" rel="noopener">rwmanukau.co.nz</a> — photos are hosted behind Ray White's authenticated image service and aren't shown here; click through to view full listing photos.</p>
@@ -66,8 +54,11 @@
 
 <section id="sold" class="listings sold reveal">
   <div class="container">
-    <h2>Recently Sold</h2>
-    <p class="section-sub">Sales from the last 6 months across Manukau and surrounding suburbs</p>
+    <div class="section-head">
+      <p class="eyebrow">Sold</p>
+      <h2>Recent results.</h2>
+      <p class="section-sub">Sales from the last six months across Manukau and the surrounding suburbs.</p>
+    </div>
 
     <div class="listing-grid" id="featured-sold-grid"></div>
     <div class="show-more-wrap">
@@ -79,8 +70,11 @@
 
 <section id="office-listings" class="office-listings reveal">
   <div class="container">
-    <h2>Ray White Manukau Office Listings</h2>
-    <p class="section-sub">Browse current listings and sales from the last 6 months by location</p>
+    <div class="section-head">
+      <p class="eyebrow">Areas</p>
+      <h2>Browse by suburb.</h2>
+      <p class="section-sub">Every current listing and recent sale from the Ray White Manukau office, filtered by location.</p>
+    </div>
 
     <div class="office-filters">
       <select id="office-suburb-select">
@@ -114,8 +108,9 @@
   <div class="container about-inner">
     <div class="about-photo"><img src="about-photo.png" alt="Arvic Gonzales, Ray White Manukau real estate agent" loading="lazy"></div>
     <div class="about-text">
-      <h2>About Arvic Gonzales</h2>
-      <p>Arvic is a dedicated real estate agent at Ray White Manukau, helping families across South Auckland buy, sell, and invest in property with confidence. With deep local market knowledge and a client-first approach, Arvic delivers results backed by the trusted Ray White network.</p>
+      <p class="eyebrow">About</p>
+      <h2>Straight answers, start to finish.</h2>
+      <p class="section-sub">Arvic is a licensed salesperson at Ray White Manukau, helping families across South Auckland buy, sell, and invest with confidence. Proudly Filipino and a long-time Manukau local, he brings deep knowledge of the area and a client-first approach, backed by the Ray White network.</p>
       <div class="contact-info">
         <p><strong>Phone:</strong> 021 106 7411</p>
         <p><strong>Email:</strong> arvic.gonzales@raywhite.com</p>
@@ -128,7 +123,10 @@
 
 <section id="services" class="services reveal">
   <div class="container">
-    <h2>How I Can Help</h2>
+    <div class="section-head">
+      <p class="eyebrow">What I do</p>
+      <h2>How I can help.</h2>
+    </div>
     <div class="services-grid">
       <div class="service-card">
         <h3>Selling</h3>
@@ -152,9 +150,11 @@
 
 <section id="reviews" class="reviews reveal">
   <div class="container">
-    <h2>Client Reviews</h2>
-    <p class="section-sub">Verified reviews from Google and RateMyAgent</p>
-    <p class="rating-highlight">5.0 ★ average rating</p>
+    <div class="section-head">
+      <p class="eyebrow">Reviews</p>
+      <p class="rating-highlight">5.0 <span>★</span></p>
+      <p class="section-sub">Verified client reviews from Google and RateMyAgent.</p>
+    </div>
 
     <div class="review-grid">
       <div class="review-card">
@@ -197,8 +197,11 @@
 
 <section id="instagram" class="instagram reveal">
   <div class="container">
-    <h2>Follow Along on Instagram</h2>
-    <p class="section-sub">Latest listings, open homes, and behind-the-scenes posts</p>
+    <div class="section-head">
+      <p class="eyebrow">Instagram</p>
+      <h2>Follow along.</h2>
+      <p class="section-sub">Latest listings, open homes, and behind-the-scenes posts.</p>
+    </div>
     <div class="instagram-grid">
       <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="ig-post placeholder-1"></a>
       <a href="https://www.instagram.com/arvicgonzales_realestate/" target="_blank" rel="noopener" class="ig-post placeholder-2"></a>
@@ -211,8 +214,10 @@
 
 <section id="team" class="team reveal">
   <div class="container">
-    <h2>My Team</h2>
-    <p class="section-sub">The Ray White people behind every campaign</p>
+    <div class="section-head">
+      <p class="eyebrow">The team</p>
+      <h2>The people behind every campaign.</h2>
+    </div>
     <div class="team-grid">
       <div class="team-card">
         <div class="team-photo placeholder-1"></div>
@@ -251,8 +256,9 @@
 <section id="contact" class="contact reveal">
   <div class="container contact-inner">
     <div class="contact-text">
-      <h2>Let's Talk Property</h2>
-      <p>Whether you're buying, selling, or just want a free appraisal — get in touch today.</p>
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk property.</h2>
+      <p class="lead">Buying, selling, or just want to know what your home is worth — get in touch for a free appraisal.</p>
       <p><strong>Phone:</strong> 021 106 7411</p>
       <p><strong>Email:</strong> arvic.gonzales@raywhite.com</p>
       <p><strong>Office:</strong> Ray White Manukau</p>
