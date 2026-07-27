@@ -364,8 +364,50 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
 /* Reviews */
 .reviews { background: var(--dark); color: #fff; }
 .reviews .section-sub { color: #ccc; }
-.reviews-cta { text-align: center; margin-top: 20px; }
-.rating-highlight { font-size: 28px; font-weight: 700; color: var(--red); margin-bottom: 20px; }
+.reviews-cta { text-align: center; margin-top: 36px; }
+.rating-highlight { font-size: 28px; font-weight: 700; color: var(--red); text-align: center; margin-bottom: 36px; }
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.review-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.review-stars { color: var(--red); font-size: 14px; margin-bottom: 12px; letter-spacing: 2px; }
+.review-quote { font-size: 14px; line-height: 1.6; color: #e8e8e8; margin-bottom: 16px; flex: 1; }
+.review-author { font-size: 13px; font-weight: 600; color: #fff; }
+.review-author span { font-weight: 400; color: #999; }
+
+/* Team */
+.team { background: var(--light); }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.team-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.1);
+}
+.team-photo { height: 220px; }
+.team-card h3 { font-size: 18px; margin: 20px 0 4px; }
+.team-card p { color: var(--grey); font-size: 14px; }
 
 /* Instagram */
 .instagram { background: var(--light); text-align: center; }
@@ -420,10 +462,10 @@ section h2 { font-size: 32px; text-align: center; margin-bottom: 12px; }
 @media (max-width: 900px) {
   .main-nav { display: none; }
   .about-inner, .contact-inner { grid-template-columns: 1fr; }
-  .listing-grid, .services-grid, .instagram-grid, .stats-grid { grid-template-columns: 1fr 1fr; }
+  .listing-grid, .services-grid, .instagram-grid, .stats-grid, .review-grid, .team-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
-  .listing-grid, .services-grid, .instagram-grid, .stats-grid { grid-template-columns: 1fr; }
+  .listing-grid, .services-grid, .instagram-grid, .stats-grid, .review-grid, .team-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 30px; }
   .search-bar { flex-direction: column; }
 }
