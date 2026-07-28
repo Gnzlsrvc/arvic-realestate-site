@@ -264,12 +264,26 @@
       <p><strong>Office:</strong> Ray White Manukau</p>
       <p><strong>Address:</strong> 603 Great South Road, Manukau City</p>
     </div>
-    <form class="contact-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone">
-      <textarea placeholder="Message" rows="4"></textarea>
-      <button type="submit" class="btn btn-primary">Send Message</button>
+    <form class="contact-form" action="https://formsubmit.co/arvic.gonzales@raywhite.com" method="POST">
+      <input type="hidden" name="_subject" value="New enquiry from arvicgonzales.co.nz">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://gnzlsrvc.github.io/arvic-realestate-site/thanks.html">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label class="sr-only" for="cf-name">Your name</label>
+      <input id="cf-name" type="text" name="Name" placeholder="Name" autocomplete="name" required>
+
+      <label class="sr-only" for="cf-email">Your email</label>
+      <input id="cf-email" type="email" name="Email" placeholder="Email" autocomplete="email" required>
+
+      <label class="sr-only" for="cf-phone">Your phone number</label>
+      <input id="cf-phone" type="tel" name="Phone" placeholder="Phone" autocomplete="tel">
+
+      <label class="sr-only" for="cf-message">Your message</label>
+      <textarea id="cf-message" name="Message" placeholder="Message" rows="4"></textarea>
+
+      <button type="submit" class="btn btn-primary">Send message</button>
     </form>
   </div>
 </section>
