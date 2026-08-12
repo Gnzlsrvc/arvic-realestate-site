@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept B — After Dark</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0c0d; --bg-2:#141416; --text:#eceae6; --text-2:#9d9a94;
+  --rule:#26262a; --yellow:#ffe512;
+  --display:'Instrument Serif',Georgia,serif; --body:'Archivo',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text-2);font-family:var(--body);font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 34px}
+h1,h2,h3{font-family:var(--display);color:var(--text);font-weight:400;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:clamp(50px,7.6vw,104px)}
+h2{font-size:clamp(34px,4.6vw,58px)}
+h3{font-size:22px;line-height:1.2}
+a{color:inherit}
+em{font-style:italic;color:var(--yellow)}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--text-2)}
+header{position:sticky;top:0;z-index:9;background:rgba(12,12,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.hin{display:flex;justify-content:space-between;align-items:center;height:78px;gap:20px}
+.logo{font-family:var(--display);font-size:23px;color:var(--text);text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:28px;align-items:center}
+nav a{text-decoration:none;font-size:14.5px;color:var(--text-2);white-space:nowrap}
+nav a:hover{color:var(--text)}
+.cta{border:1px solid var(--yellow);color:var(--yellow)!important;padding:11px 22px;font-weight:600;font-size:14px;border-radius:100px}
+.cta:hover{background:var(--yellow);color:var(--bg)!important}
+/* cinematic hero */
+.hero{position:relative;min-height:84vh;display:flex;align-items:center;overflow:hidden}
+.hero-img{position:absolute;top:0;right:0;bottom:0;width:56%}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;filter:saturate(.78) contrast(1.04)}
+.scrim{position:absolute;top:0;right:0;bottom:0;width:56%;background:
+  linear-gradient(to right,var(--bg) 0%,rgba(12,12,13,.72) 26%,rgba(12,12,13,0) 62%)}
+.hero-in{position:relative;max-width:600px;padding:64px 0}
+.hero h1{margin:20px 0 26px}
+.lead{font-size:19px;max-width:460px;margin-bottom:34px;color:var(--text-2)}
+.acts{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:15px 30px;border-radius:100px;font-weight:600;font-size:15px;text-decoration:none;display:inline-block;border:1px solid transparent}
+.btn-y{background:var(--yellow);color:#0c0c0d}
+.btn-y:hover{background:#fff}
+.btn-o{border-color:var(--rule);color:var(--text)}
+.btn-o:hover{border-color:var(--text)}
+section{padding:104px 0;border-top:1px solid var(--rule)}
+.head{max-width:720px;margin-bottom:52px}
+.head h2{margin-top:16px}
+.sub{margin-top:16px;font-size:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--bg-2);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.card .ph{height:190px;background:linear-gradient(150deg,#2a2a2e,#191919)}
+.cb{padding:24px}
+.addr{font-family:var(--display);font-size:23px;color:var(--text);margin-bottom:4px}
+.sub2{font-size:13.5px;color:var(--text-2);margin-bottom:16px}
+.meta{font-size:13px;padding-top:14px;border-top:1px solid var(--rule)}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);border:1px solid var(--yellow);padding:4px 10px;border-radius:100px;margin-bottom:14px}
+.quote{font-family:var(--display);font-size:clamp(26px,3.4vw,44px);line-height:1.22;color:var(--text);max-width:900px}
+.attrib{margin-top:26px;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2)}
+.rating{display:flex;align-items:baseline;gap:18px;margin-bottom:34px}
+.rating .n{font-family:var(--display);font-size:clamp(58px,8vw,92px);color:var(--text);line-height:1}
+.rating .s{color:var(--yellow);letter-spacing:4px;font-size:15px}
+@media(max-width:880px){
+  nav a:not(.cta){display:none}
+  .hero{min-height:0;flex-direction:column;align-items:stretch}
+  .hero-img,.scrim{position:relative;width:100%}
+  .hero-img{height:340px;order:2}
+  .scrim{display:none}
+  .hero-in{padding:54px 0 40px;order:1}
+  .grid3{grid-template-columns:1fr}
+  section{padding:66px 0}
+}
+</style>
+</head>
+<body>
+
+<header><div class="wrap hin">
+  <a class="logo" href="#">Arvic Gonzales</a>
+  <nav>
+    <a href="#">Selling</a><a href="#">Sold</a><a href="#">Suburbs</a><a href="#">About</a>
+    <a class="cta" href="#">Free appraisal</a>
+  </nav>
+</div></header>
+
+<div class="hero">
+  <div class="hero-img"><img src="../img/arvic.jpg" alt="Arvic Gonzales"></div>
+  <div class="scrim"></div>
+  <div class="wrap"><div class="hero-in">
+    <p class="eyebrow">Ray White Manukau</p>
+    <h1>Your home deserves <em>someone who fights for it.</em></h1>
+    <p class="lead">A straight number on what it's worth, and a campaign built to get it across the line. Start with a free appraisal.</p>
+    <div class="acts">
+      <a class="btn btn-y" href="#">Book an appraisal</a>
+      <a class="btn btn-o" href="#">See recent sales</a>
+    </div>
+  </div></div>
+</div>
+
+<section><div class="wrap">
+  <div class="head">
+    <p class="eyebrow">Now selling</p>
+    <h2>Homes on the market.</h2>
+    <p class="sub">Live from the Ray White Manukau office feed.</p>
+  </div>
+  <div class="grid3">
+    <div class="card"><div class="ph"></div><div class="cb"><span class="tag">By negotiation</span><div class="addr">5/16 Lincoln Road</div><div class="sub2">Manurewa</div><div class="meta">2 bed · 1 bath</div></div></div>
+    <div class="card"><div class="ph"></div><div class="cb"><span class="tag">Auction</span><div class="addr">2 Awakino Place</div><div class="sub2">Manurewa</div><div class="meta">3 bed · 1 bath</div></div></div>
+    <div class="card"><div class="ph"></div><div class="cb"><span class="tag">Set sale date</span><div class="addr">11 Oakville Avenue</div><div class="sub2">Flat Bush</div><div class="meta">4 bed · 2 bath</div></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="rating"><span class="n">5.0</span><span class="s">★★★★★</span></div>
+  <p class="quote">"If you want someone driven who won't stop until he sees results, Arvic is your man."</p>
+  <p class="attrib">Destiny Fruean · Google</p>
+</div></section>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept C — Full Voice</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111110; --ink-2:#46453f; --mute:#8a887f;
+  --paper:#fff; --wash:#f4f2ec; --rule:#dedbd2; --yellow:#ffe512;
+  --display:'Bricolage Grotesque','Helvetica Neue',sans-serif; --body:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink-2);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:800;line-height:1;letter-spacing:-.035em;text-wrap:balance}
+h1{font-size:clamp(48px,8.2vw,104px)}
+h2{font-size:clamp(32px,4.6vw,56px)}
+h3{font-size:20px;letter-spacing:-.02em;line-height:1.15}
+a{color:inherit}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+header{position:sticky;top:0;z-index:9;background:var(--paper);border-bottom:2px solid var(--ink)}
+.hin{display:flex;justify-content:space-between;align-items:center;height:70px;gap:20px}
+.logo{font-family:var(--display);font-weight:800;font-size:21px;letter-spacing:-.035em;text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:24px;align-items:center}
+nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--ink-2);white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.cta{background:var(--yellow);border:2px solid var(--ink);color:var(--ink)!important;padding:9px 18px;font-weight:700;font-size:14px;border-radius:2px}
+.cta:hover{background:var(--ink);color:var(--yellow)!important}
+/* hero: split, yellow panel + portrait, no giant flat block */
+.hero{border-bottom:2px solid var(--ink)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;min-height:min(640px,78vh)}
+.hero-l{background:var(--yellow);display:flex;flex-direction:column;justify-content:center;padding:64px 56px 64px 0}
+.hero-l .inner{max-width:620px;margin-left:auto;padding-right:56px;width:100%}
+.hero-r{border-left:2px solid var(--ink);background:var(--wash);position:relative;overflow:hidden}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.hero h1{margin:18px 0 22px;color:var(--ink)}
+.lead{font-size:19px;color:#3a3933;max-width:470px;margin-bottom:30px;font-weight:500}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 28px;border:2px solid var(--ink);border-radius:2px;font-weight:700;font-size:15.5px;text-decoration:none;display:inline-block}
+.btn-d{background:var(--ink);color:#fff}
+.btn-d:hover{background:#000}
+.btn-o{background:transparent;color:var(--ink)}
+.btn-o:hover{background:var(--ink);color:var(--yellow)}
+/* signature: a running ticker of what he actually does */
+.ticker{background:var(--ink);color:#fff;border-bottom:2px solid var(--ink);overflow:hidden;padding:14px 0}
+.ticker-in{display:flex;gap:44px;white-space:nowrap;animation:slide 34s linear infinite;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.ticker-in span{display:flex;align-items:center;gap:44px}
+.dot{width:6px;height:6px;background:var(--yellow);border-radius:100px;display:inline-block}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker-in{animation:none}}
+section{padding:88px 0;border-bottom:2px solid var(--ink)}
+.wash{background:var(--wash)}
+.head{max-width:720px;margin-bottom:46px}
+.head h2{margin-top:14px}
+.sub{margin-top:14px;font-size:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border:2px solid var(--ink);border-radius:2px;overflow:hidden}
+.card:hover{transform:translateY(-4px);box-shadow:8px 8px 0 var(--yellow)}
+.card{transition:.18s ease}
+.ph{height:180px;background:linear-gradient(150deg,#dcd8cb,#c1bcac);border-bottom:2px solid var(--ink);position:relative}
+.tag{position:absolute;top:0;left:0;background:var(--yellow);border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:6px 11px}
+.cb{padding:22px}
+.addr{font-family:var(--display);font-size:20px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:4px}
+.sub2{font-size:14px;color:var(--mute);margin-bottom:14px}
+.meta{font-size:13px;font-weight:600;padding-top:12px;border-top:1px solid var(--rule)}
+.rating{font-family:var(--display);font-size:clamp(56px,9vw,104px);font-weight:800;letter-spacing:-.045em;color:var(--ink);line-height:1}
+.quote{font-size:clamp(20px,2.5vw,28px);line-height:1.35;color:var(--ink);font-weight:500;max-width:840px;margin-top:26px}
+.attrib{margin-top:20px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+@media(max-width:880px){
+  nav a:not(.cta){display:none}
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-l{padding:52px 0}
+  .hero-l .inner{padding:0 30px;max-width:none}
+  .hero-r{border-left:none;border-top:2px solid var(--ink);height:380px}
+  .grid3{grid-template-columns:1fr}
+  section{padding:62px 0}
+}
+</style>
+</head>
+<body>
+
+<header><div class="wrap hin">
+  <a class="logo" href="#">Arvic Gonzales</a>
+  <nav>
+    <a href="#">Selling</a><a href="#">Sold</a><a href="#">Suburbs</a><a href="#">About</a>
+    <a class="cta" href="#">Free appraisal</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="hero-grid">
+  <div class="hero-l"><div class="inner">
+    <p class="eyebrow">Ray White Manukau</p>
+    <h1>I don't stop until it's sold.</h1>
+    <p class="lead">A straight number on what your home is worth, and a campaign that gets it across the line. Free appraisal, no obligation.</p>
+    <div class="acts">
+      <a class="btn btn-d" href="#">Book an appraisal</a>
+      <a class="btn btn-o" href="#">See recent sales</a>
+    </div>
+  </div></div>
+  <div class="hero-r"><img src="../img/arvic.jpg" alt="Arvic Gonzales"></div>
+</div></div>
+
+<div class="ticker"><div class="ticker-in">
+  <span>Appraisals<i class="dot"></i>Auctions<i class="dot"></i>Open homes<i class="dot"></i>Negotiation<i class="dot"></i>First home buyers<i class="dot"></i>Investors<i class="dot"></i>Manurewa<i class="dot"></i>Papatoetoe<i class="dot"></i>Flat Bush<i class="dot"></i></span>
+  <span>Appraisals<i class="dot"></i>Auctions<i class="dot"></i>Open homes<i class="dot"></i>Negotiation<i class="dot"></i>First home buyers<i class="dot"></i>Investors<i class="dot"></i>Manurewa<i class="dot"></i>Papatoetoe<i class="dot"></i>Flat Bush<i class="dot"></i></span>
+</div></div>
+
+<section><div class="wrap">
+  <div class="head">
+    <p class="eyebrow">Now selling</p>
+    <h2>Homes on the market.</h2>
+    <p class="sub">Live from the Ray White Manukau office feed.</p>
+  </div>
+  <div class="grid3">
+    <div class="card"><div class="ph"><span class="tag">By negotiation</span></div><div class="cb"><div class="addr">5/16 Lincoln Road</div><div class="sub2">Manurewa</div><div class="meta">2 bed · 1 bath</div></div></div>
+    <div class="card"><div class="ph"><span class="tag">Auction</span></div><div class="cb"><div class="addr">2 Awakino Place</div><div class="sub2">Manurewa</div><div class="meta">3 bed · 1 bath</div></div></div>
+    <div class="card"><div class="ph"><span class="tag">Set sale date</span></div><div class="cb"><div class="addr">11 Oakville Avenue</div><div class="sub2">Flat Bush</div><div class="meta">4 bed · 2 bath</div></div></div>
+  </div>
+</div></section>
+
+<section class="wash"><div class="wrap">
+  <p class="eyebrow">Reviews</p>
+  <div class="rating">5.0</div>
+  <p class="quote">"He made our family feel like we mattered. Was a pleasure working with you Arvic — forreal you're the GOAT."</p>
+  <p class="attrib">Eds Kjops · Google</p>
+</div></section>
+
+</body>
+</html>

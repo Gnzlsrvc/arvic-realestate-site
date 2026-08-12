@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept A — Manukau Ink</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfaf8; --ink:#14140f; --ink-2:#4a4941; --mute:#8b897e;
+  --rule:#e0ddd3; --yellow:#ffe512;
+  --display:'Fraunces',Georgia,serif; --body:'Public Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink-2);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:600;line-height:1.05;letter-spacing:-0.015em;text-wrap:balance}
+h1{font-size:clamp(46px,6.6vw,80px)}
+h2{font-size:clamp(30px,3.8vw,46px)}
+h3{font-size:20px;line-height:1.2}
+a{color:inherit}
+.mark{background:linear-gradient(to top,var(--yellow) .34em,transparent .34em)}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+/* header */
+header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:rgba(251,250,248,.93);backdrop-filter:blur(10px);z-index:9}
+.hin{display:flex;justify-content:space-between;align-items:center;height:76px;gap:20px}
+.logo{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.02em;text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-size:15px;color:var(--ink-2);white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.cta{border:1px solid var(--ink);padding:11px 20px;font-weight:600;font-size:14.5px;color:var(--ink)!important;border-radius:1px}
+.cta:hover{background:var(--ink);color:var(--paper)!important}
+/* hero */
+.hero{padding:84px 0 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:end}
+.hero h1{margin:22px 0 24px}
+.hero h1 em{font-style:italic;font-weight:400}
+.lead{font-size:19.5px;max-width:480px;margin-bottom:32px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 28px;border-radius:1px;font-weight:600;font-size:15.5px;text-decoration:none;border:1px solid var(--ink);display:inline-block}
+.btn-fill{background:var(--ink);color:var(--paper)}
+.btn-fill:hover{background:#000}
+.btn-ghost{color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.portrait{position:relative}
+.portrait img{display:block;width:100%;max-width:430px;margin-left:auto}
+.portrait::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--rule)}
+/* the signature: oversized locale wordmark */
+.locale{border-top:1px solid var(--rule);margin-top:0;overflow:hidden}
+.locale span{
+  display:block;font-family:var(--display);font-weight:700;
+  font-size:clamp(52px,13.4vw,182px);line-height:1;letter-spacing:-.05em;
+  color:transparent;-webkit-text-stroke:1px var(--rule);
+  padding:26px 0 14px;white-space:nowrap
+}
+section{padding:88px 0;border-top:1px solid var(--rule)}
+.head{max-width:700px;margin-bottom:44px}
+.head h2{margin-top:14px}
+.sub{margin-top:14px;font-size:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.card{background:var(--paper);padding:26px}
+.card .ph{height:170px;background:linear-gradient(150deg,#e5e1d6,#cfcabb);margin:-26px -26px 20px}
+.addr{font-family:var(--display);font-size:19px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.sub2{font-size:14px;color:var(--mute);margin-bottom:14px}
+.meta{font-size:13px;color:var(--ink-2);padding-top:12px;border-top:1px solid var(--rule)}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.stat .n{font-family:var(--display);font-size:clamp(38px,5vw,62px);font-weight:700;color:var(--ink);line-height:1}
+.stat .l{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-top:8px}
+.quote{font-family:var(--display);font-size:clamp(22px,2.7vw,32px);line-height:1.3;color:var(--ink);font-weight:400;font-style:italic;max-width:820px}
+.attrib{margin-top:22px;font-size:14px;color:var(--mute);letter-spacing:.04em}
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .portrait img{max-width:320px;margin:0 auto}
+  nav a:not(.cta){display:none}
+  .grid3,.stat-row{grid-template-columns:1fr}
+  section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<header><div class="wrap hin">
+  <a class="logo" href="#">Arvic Gonzales</a>
+  <nav>
+    <a href="#">Selling</a><a href="#">Sold</a><a href="#">Suburbs</a><a href="#">About</a>
+    <a class="cta" href="#">Free appraisal</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="eyebrow">Ray White Manukau</p>
+    <h1>The agent who <em>actually</em> <span class="mark">picks up</span>.</h1>
+    <p class="lead">A straight number on what your home is worth, and a campaign that gets it across the line. Start with a free appraisal.</p>
+    <div class="acts">
+      <a class="btn btn-fill" href="#">Book an appraisal</a>
+      <a class="btn btn-ghost" href="#">See recent sales</a>
+    </div>
+  </div>
+  <div class="portrait"><img src="../img/arvic.jpg" alt="Arvic Gonzales"></div>
+</div></div>
+
+<div class="locale"><div class="wrap"><span>MANUREWA · PAPATOETOE · MANUKAU · FLAT BUSH</span></div></div>
+
+<section><div class="wrap">
+  <div class="stat-row">
+    <div class="stat"><div class="n">5.0</div><div class="l">Average client rating</div></div>
+    <div class="stat"><div class="n">Same&nbsp;day</div><div class="l">Typical reply time</div></div>
+    <div class="stat"><div class="n">Manukau</div><div class="l">Where he actually lives</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head">
+    <p class="eyebrow">Now selling</p>
+    <h2>Homes on the market.</h2>
+    <p class="sub">Live from the Ray White Manukau office feed.</p>
+  </div>
+  <div class="grid3">
+    <div class="card"><div class="ph"></div><div class="addr">5/16 Lincoln Road</div><div class="sub2">Manurewa</div><div class="meta">2 bed · 1 bath · By negotiation</div></div>
+    <div class="card"><div class="ph"></div><div class="addr">2 Awakino Place</div><div class="sub2">Manurewa</div><div class="meta">3 bed · 1 bath · Auction</div></div>
+    <div class="card"><div class="ph"></div><div class="addr">11 Oakville Avenue</div><div class="sub2">Flat Bush</div><div class="meta">4 bed · 2 bath · Set sale date</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow" style="margin-bottom:26px">What clients say</p>
+  <p class="quote">"When Arvic says 'I got you', trust that he means it. He came in clutch many times and saved us a lot of headaches."</p>
+  <p class="attrib">J T · Google review</p>
+</div></section>
+
+</body>
+</html>
