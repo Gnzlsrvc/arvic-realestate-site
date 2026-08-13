@@ -321,8 +321,17 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .about-text p { margin-bottom: 20px; }
 .contact-info { margin: 26px 0; }
-.contact-info p { margin-bottom: 8px; }
+.contact-info p { margin-bottom: 2px; }
 .contact-info strong { color: var(--ink); font-weight: 700; }
+/* Tapping a number should look tappable */
+.contact-link {
+  color: inherit; text-decoration: none;
+  border-bottom: 2px solid var(--yellow);
+  display: inline-block; padding: 7px 0;   /* comfortable thumb target */
+}
+.contact-link:hover { border-bottom-color: currentColor; }
+.band-ink .contact-link { color: var(--paper); border-bottom-color: rgba(255,229,18,.6); }
+.band-ink .contact-link:hover { border-bottom-color: var(--yellow); }
 
 /* Services */
 .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
@@ -373,7 +382,7 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
 /* Contact */
 .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
 .contact-text .lead { font-size: 19px; margin-bottom: 28px; }
-.contact-text p { margin-bottom: 10px; }
+.contact-text p { margin-bottom: 4px; }
 .contact-text strong { color: var(--paper); font-weight: 700; }
 .contact-form { display: flex; flex-direction: column; gap: 13px; }
 .contact-form input, .contact-form textarea {
