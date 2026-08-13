@@ -244,7 +244,10 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
 }
 .listing-card:hover { transform: translateY(-4px); box-shadow: 8px 8px 0 var(--yellow); }
 .listing-card.is-hidden { display: none; }
-.listing-img { display: block; height: 190px; position: relative; border-bottom: 2px solid var(--ink); }
+.listing-img { display: block; height: 190px; position: relative; border-bottom: 2px solid var(--ink); overflow: hidden; background: var(--wash); }
+.listing-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.listing-card:hover .listing-img img { transform: scale(1.03); }
+.listing-img img { transition: transform .35s ease; }
 .placeholder-1 { background: linear-gradient(150deg, #ded9cb, #c3bdab); }
 .placeholder-2 { background: linear-gradient(150deg, #d3d5d6, #b4b8ba); }
 .placeholder-3 { background: linear-gradient(150deg, #e0d9c8, #c0b8a4); }
@@ -256,6 +259,12 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
   padding: 6px 11px;
   border-right: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
+}
+/* Arvic's own listings carry a second tag on the opposite corner */
+.tag-mine {
+  left: auto; right: 0;
+  background: var(--ink); color: var(--paper);
+  border-right: none; border-left: 2px solid var(--ink);
 }
 .listing-body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
 .card-address {

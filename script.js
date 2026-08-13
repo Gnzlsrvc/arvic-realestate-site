@@ -4,7 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
   initFeaturedGrids();
   initOfficeListings();
   initRevealAnimations();
+  initUpdatedStamp();
 });
+
+// The page promises live data, so say plainly when it was last refreshed.
+function initUpdatedStamp() {
+  if (typeof LISTINGS_UPDATED === 'undefined') return;
+  const stamp = new Date(LISTINGS_UPDATED + 'T00:00:00');
+  if (isNaN(stamp)) return;
+  const pretty = stamp.toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' });
+  document.querySelectorAll('[data-listings-updated]').forEach(el => {
+    el.textContent = pretty;
+  });
+}
 
 const PLACEHOLDER_CLASSES = ['placeholder-1', 'placeholder-2', 'placeholder-3'];
 
@@ -22,21 +34,44 @@ function shortTag(status) {
   return status.length > 18 ? status.slice(0, 18) + '…' : status;
 }
 
+// The feed is third-party: escaping stops markup, but not a javascript: URL.
+function safeURL(value) {
+  const url = String(value == null ? '' : value);
+  return /^https?:\/\//i.test(url) ? url : '#';
+}
+
+function escapeHTML(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[ch]);
+}
+
 function cardHTML(listing, i) {
-  const imgClass = PLACEHOLDER_CLASSES[i % PLACEHOLDER_CLASSES.length];
   const metaParts = [];
   if (listing.beds) metaParts.push(`${listing.beds} bed`);
   if (listing.baths) metaParts.push(`${listing.baths} bath`);
   if (listing.cars) metaParts.push(`${listing.cars} car`);
   const meta = metaParts.length ? `<ul class="meta"><li>${metaParts.join('</li><li>')}</li></ul>` : '';
+
+  const address = escapeHTML(listing.address);
+  const href = escapeHTML(safeURL(listing.href));
+  // Fall back to the old gradient when a listing has no photo on the feed.
+  const media = listing.image
+    ? `<img src="${escapeHTML(safeURL(listing.image))}" alt="${address}" loading="lazy" decoding="async" width="760" height="500">`
+    : '';
+  const imgClass = listing.image ? '' : ' ' + PLACEHOLDER_CLASSES[i % PLACEHOLDER_CLASSES.length];
+  const mine = listing.mine ? '<span class="tag tag-mine">Arvic\'s listing</span>' : '';
+
   return `
     <article class="listing-card">
-      <a class="listing-img ${imgClass}" href="${listing.href}" target="_blank" rel="noopener"><span class="tag">${shortTag(listing.status)}</span></a>
+      <a class="listing-img${imgClass}" href="${href}" target="_blank" rel="noopener">
+        ${media}<span class="tag">${escapeHTML(shortTag(listing.status))}</span>${mine}
+      </a>
       <div class="listing-body">
-        <h3 class="card-address">${listing.address}</h3>
-        <p class="card-suburb">${listing.suburb} · ${listing.status}</p>
+        <h3 class="card-address">${address}</h3>
+        <p class="card-suburb">${escapeHTML(listing.suburb)} · ${escapeHTML(listing.status)}</p>
         ${meta}
-        <a href="${listing.href}" target="_blank" rel="noopener" class="view-link">View Listing →</a>
+        <a href="${href}" target="_blank" rel="noopener" class="view-link">View listing →</a>
       </div>
     </article>`;
 }
@@ -48,13 +83,16 @@ function initFeaturedGrids() {
   const soldGrid = document.getElementById('featured-sold-grid');
   const showMoreBtn = document.getElementById('sold-show-more');
 
+  // Arvic's own listings lead; office stock fills the row behind them.
+  const mineFirst = list => [...list].sort((a, b) => (b.mine === true) - (a.mine === true));
+
   if (featuredGrid) {
-    const forSale = OFFICE_LISTINGS.filter(l => l.type === 'for-sale').slice(0, 3);
+    const forSale = mineFirst(OFFICE_LISTINGS.filter(l => l.type === 'for-sale')).slice(0, 3);
     featuredGrid.innerHTML = forSale.map(cardHTML).join('');
   }
 
   if (soldGrid) {
-    const allSold = OFFICE_LISTINGS.filter(l => l.type === 'sold');
+    const allSold = mineFirst(OFFICE_LISTINGS.filter(l => l.type === 'sold'));
     const pageSize = 6;
     let shown = pageSize;
 
