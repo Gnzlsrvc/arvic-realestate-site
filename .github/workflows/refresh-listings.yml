@@ -1,0 +1,58 @@
+name: Refresh listings
+
+# The site tells visitors its listings are live, so the data has to keep up.
+on:
+  schedule:
+    # Twice daily. Cron is UTC and NZ shifts between UTC+12 and +13, so these
+    # land ~6am/6pm NZST and ~7am/7pm NZDT — close enough for a daily refresh.
+    # The "last updated" date itself is computed in NZ time by the script.
+    - cron: "15 18 * * *"
+    - cron: "15 6 * * *"
+  workflow_dispatch:        # lets Arvic refresh on demand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-listings
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch the latest listings
+        run: python3 scripts/fetch-listings.py
+
+      - name: Sanity-check the result
+        # Never publish a file that came back empty or truncated — a bad
+        # fetch should leave yesterday's good data in place.
+        run: |
+          python3 - <<'PY'
+          import json, re, sys
+          src = open("listings-data.js", encoding="utf-8").read()
+          rows = json.loads(re.search(r"const OFFICE_LISTINGS = (\[.*\]);", src, re.S).group(1))
+          for_sale = sum(1 for r in rows if r["type"] == "for-sale")
+          sold = sum(1 for r in rows if r["type"] == "sold")
+          print(f"{len(rows)} listings — {for_sale} for sale, {sold} sold")
+          if for_sale < 20 or sold < 20:
+              sys.exit(f"suspiciously few listings ({for_sale} for sale, {sold} sold); not committing")
+          PY
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet -- listings-data.js; then
+            echo "No change in the feed today."
+            exit 0
+          fi
+          git config user.name "Arvic Gonzales"
+          git config user.email "Arvic.gonzales@raywhite.com"
+          git add listings-data.js
+          git commit -m "Refresh listings from the Ray White Manukau feed"
+          git push
