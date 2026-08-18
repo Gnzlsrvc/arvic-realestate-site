@@ -4,10 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gonzales Group | Arvic Gonzales, Ray White Manukau</title>
-<meta name="description" content="Arvic Gonzales and Motete Redfern — the Gonzales Group at Ray White Manukau. Straight answers on what your South Auckland home is worth, and a campaign that gets it sold. Free appraisal.">
+<meta name="description" content="Arvic Gonzales and Motete Redfern, the Gonzales Group at Ray White Manukau. Helping South Auckland families buy and sell, with honest advice and a campaign that gets it done.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#ffe512">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gonzales Group">
+<meta property="og:title" content="Gonzales Group | Arvic Gonzales, Ray White Manukau">
+<meta property="og:description" content="Arvic Gonzales and Motete Redfern, helping South Auckland families buy and sell.">
+<meta property="og:url" content="https://arvicgonzales.co.nz/">
+<meta property="og:image" content="https://arvicgonzales.co.nz/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Arvic Gonzales and Jay Singh beside a sold sign in Manurewa">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +29,11 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#" class="logo">Gonzales Group<span>Ray White Manukau</span></a>
-    <nav class="main-nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="main-nav" id="site-nav">
       <a href="#listings">Listings</a>
       <a href="#sold">Recently Sold</a>
       <a href="#office-listings">Office Listings</a>
@@ -33,10 +51,10 @@
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="hero-kicker">Gonzales Group &middot; Ray White Manukau</p>
-      <h1>I don't stop until <span class="mark">it's sold</span>.</h1>
-      <p class="hero-lead">A straight number on what your home is worth, and a campaign that gets it across the line. Start with a free appraisal &mdash; no obligation, just a real number and a plan.</p>
+      <h1>Your move. <span class="mark">Our whole attention</span>.</h1>
+      <p class="hero-lead">Whether you are buying or selling in Manukau, you get both of us in your corner. We will tell you what we would do if it were our own family, then get on with it.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get a free appraisal</a>
+        <a href="#contact" class="btn btn-primary">Talk to us</a>
         <a href="#team" class="btn btn-outline">Meet the team</a>
       </div>
     </div>
@@ -63,7 +81,7 @@
     </div>
 
     <div class="listing-grid" id="featured-listing-grid"></div>
-    <p class="section-note">Pulled from the <a href="https://rwmanukau.co.nz/" target="_blank" rel="noopener">Ray White Manukau</a> feed and refreshed daily. Last updated <span data-listings-updated>&mdash;</span>.</p>
+    <p class="section-note">Pulled from the <a href="https://rwmanukau.co.nz/" target="_blank" rel="noopener">Ray White Manukau</a> feed and refreshed daily. <span class="updated-stamp" hidden>Last updated <span data-listings-updated></span>.</span></p>
   </div>
 </section>
 
@@ -79,7 +97,7 @@
     <div class="show-more-wrap">
       <button class="btn btn-outline-dark" id="sold-show-more">Show More</button>
     </div>
-    <p class="section-note">Sales from the last six months across the Ray White Manukau office, refreshed daily. Last updated <span data-listings-updated>&mdash;</span>. Want a specific suburb? Use the <a href="#office-listings">filter below</a>.</p>
+    <p class="section-note">Sales from the last six months across the Ray White Manukau office, refreshed daily. <span class="updated-stamp" hidden>Last updated <span data-listings-updated></span>.</span> Want a specific suburb? Use the <a href="#office-listings">filter below</a>.</p>
   </div>
 </section>
 
@@ -112,7 +130,7 @@
       <button class="page-btn" id="office-next-page">Next →</button>
     </div>
 
-    <p class="section-note">Every current listing and recent sale from the Ray White Manukau office, refreshed daily. Sold results cover the last six months. Last updated <span data-listings-updated>&mdash;</span>.</p>
+    <p class="section-note">Every current listing and recent sale from the Ray White Manukau office, refreshed daily. Sold results cover the last six months. <span class="updated-stamp" hidden>Last updated <span data-listings-updated></span>.</span></p>
     <div class="office-link-cta">
       <a href="https://rwmanukau.co.nz/properties/for-sale" target="_blank" rel="noopener" class="btn btn-outline-dark">View All Listings on rwmanukau.co.nz</a>
     </div>
@@ -125,7 +143,7 @@
     <div class="about-text">
       <p class="label">About</p>
       <h2>Straight answers, start to finish.</h2>
-      <p class="section-sub">Arvic is a licensed salesperson at Ray White Manukau and, with Motete Redfern, one half of the Gonzales Group. Proudly Filipino and a long-time Manukau local, he helps families across South Auckland buy, sell and invest &mdash; bringing deep knowledge of the area, a client-first approach, and the backing of the Ray White network.</p>
+      <p class="section-sub">Arvic is a licensed salesperson at Ray White Manukau and, with Motete Redfern, one half of the Gonzales Group. Proudly Filipino and a long-time Manukau local, he helps families across South Auckland buy, sell and invest, bringing deep knowledge of the area and the backing of the Ray White network.</p>
       <div class="contact-info">
         <p><strong>Phone:</strong> <a href="tel:+64211067411" class="contact-link" data-track="call">021 106 7411</a></p>
         <p><strong>Email:</strong> <a href="mailto:arvic.gonzales@raywhite.com" class="contact-link" data-track="email">arvic.gonzales@raywhite.com</a></p>
@@ -139,25 +157,25 @@
 <section id="services" class="band-paper reveal">
   <div class="container">
     <div class="section-head">
-      <p class="label">What I do</p>
-      <h2>How I can help.</h2>
+      <p class="label">What we do</p>
+      <h2>How we help.</h2>
     </div>
     <div class="services-grid">
       <div class="service-card">
         <h3>Selling</h3>
-        <p>Maximise your sale price with tailored marketing and negotiation expertise.</p>
+        <p>Photography, marketing, open homes and negotiation, all handled. You will know where things stand at every stage.</p>
       </div>
       <div class="service-card">
         <h3>Buying</h3>
-        <p>Find the right home for your family with guided support from search to settlement.</p>
+        <p>We will point out the faults as well as the good bits, and tell you when a place is not worth it.</p>
       </div>
       <div class="service-card">
         <h3>Appraisals</h3>
-        <p>Get an accurate, no-obligation appraisal of your property's current market value.</p>
+        <p>An honest read on what your home is worth today. No obligation, and no pressure to list with us.</p>
       </div>
       <div class="service-card">
         <h3>Investing</h3>
-        <p>Build your portfolio with informed advice on Manukau's growth suburbs.</p>
+        <p>Which Manukau streets are worth buying in, and which ones we would leave alone.</p>
       </div>
     </div>
   </div>
@@ -168,7 +186,7 @@
     <div class="section-head">
       <p class="label">How we work</p>
       <h2>For your story. For your success. For you.</h2>
-      <p class="section-sub">Every campaign starts with your story &mdash; why you&rsquo;re moving and what you need it to achieve. For the families who trust us with their most important asset, getting that right is the whole job.</p>
+      <p class="section-sub">Every campaign starts with your story: why you are moving, and what you need it to achieve. For the families who trust us with their most important asset, getting that right is the whole job.</p>
     </div>
     <div class="values-grid">
       <div class="value">
@@ -177,7 +195,7 @@
       </div>
       <div class="value">
         <h3>People we answer to</h3>
-        <p>You'll get a call when it's hard, not just when it's good news. Nothing is too much trouble &mdash; our clients say it better than we can.</p>
+        <p>You'll get a call when it's hard, not just when it's good news. Nothing is too much trouble. Our clients say it better than we can.</p>
       </div>
       <div class="value">
         <h3>A product the community trusts</h3>
@@ -198,7 +216,7 @@
     <div class="review-grid">
       <div class="review-card">
         <p class="review-stars">★★★★★</p>
-        <p class="review-quote">"First time writing a review for anything lol but I had to because Arvic was an absolute LEGEND! So proactive, was on top of everything, communication was exceptional, made house hunting so much easier — he set up all our appointments to view homes and when it was time to get things done he would make sure to get it DONE!"</p>
+        <p class="review-quote">"First time writing a review for anything lol but I had to because Arvic was an absolute LEGEND! So proactive, was on top of everything, communication was exceptional, made house hunting so much easier, he set up all our appointments to view homes and when it was time to get things done he would make sure to get it DONE!"</p>
         <p class="review-author">Eds Kjops <span>· Google</span></p>
       </div>
       <div class="review-card">
@@ -303,7 +321,7 @@
     <div class="contact-text">
       <p class="label">Contact</p>
       <h2>Let's talk property.</h2>
-      <p class="lead">Buying, selling, or just want to know what your home is worth — get in touch for a free appraisal.</p>
+      <p class="lead">Buying, selling, or just weighing up your options, get in touch and we will talk it through.</p>
       <p><strong>Phone:</strong> <a href="tel:+64211067411" class="contact-link" data-track="call">021 106 7411</a></p>
       <p><strong>Email:</strong> <a href="mailto:arvic.gonzales@raywhite.com" class="contact-link" data-track="email">arvic.gonzales@raywhite.com</a></p>
       <p><strong>Office:</strong> Ray White Manukau</p>
@@ -335,7 +353,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Arvic Gonzales — Ray White Manukau. All rights reserved.</p>
+    <p>&copy; 2026 Arvic Gonzales, Ray White Manukau. All rights reserved.</p>
   </div>
 </footer>
 

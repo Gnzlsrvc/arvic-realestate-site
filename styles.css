@@ -127,7 +127,7 @@ h3 { font-size: 21px; line-height: 1.15; letter-spacing: -0.02em; }
   backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--rule);
 }
-.header-inner { display: flex; justify-content: space-between; align-items: center; height: 74px; gap: 22px; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; height: 74px; gap: 22px; position: relative; }
 .logo {
   font-family: var(--font-display);
   color: var(--ink);
@@ -159,6 +159,33 @@ h3 { font-size: 21px; line-height: 1.15; letter-spacing: -0.02em; }
 /* .main-nav a beats .btn-* on specificity, so button colours are restated here */
 .main-nav a.btn { padding: 10px 19px; font-size: 14px; background: var(--yellow); color: var(--ink); }
 .main-nav a.btn:hover { background: var(--ink); color: var(--yellow); }
+
+
+/* Mobile menu button — hidden until the nav links collapse */
+.nav-toggle {
+  display: none;
+  width: 46px; height: 46px;
+  align-items: center; justify-content: center;
+  background: transparent;
+  border: 2px solid var(--ink);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0;
+  flex: 0 0 auto;
+}
+.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after {
+  content: "";
+  display: block;
+  width: 20px; height: 2px;
+  background: var(--ink);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.nav-toggle-bars { position: relative; }
+.nav-toggle-bars::before { position: absolute; top: -6px; }
+.nav-toggle-bars::after  { position: absolute; top: 6px; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after  { transform: translateY(-6px) rotate(-45deg); }
 
 /* Hero — Full Voice structure on a Manukau Ink surface */
 .hero { padding: 78px 0 0; background: var(--paper); }
@@ -410,8 +437,39 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
 }
 
 @media (max-width: 1120px) {
-  /* Collapse the links before they can overflow the header */
-  .main-nav a:not(.btn) { display: none; }
+  .nav-toggle { display: flex; }
+  /* Links move into a panel under the header instead of vanishing */
+  .main-nav {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--paper);
+    border-bottom: 2px solid var(--ink);
+    padding: 8px 30px 20px;
+    display: none;
+  }
+  .main-nav.is-open { display: flex; }
+  /* Short screens (landscape phones) must still reach the CTA */
+  .main-nav {
+    max-height: calc(100dvh - 74px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* :not(.btn) so this never strips the yellow button's own border */
+  .main-nav a:not(.btn) {
+    padding: 14px 0;
+    font-size: 17px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .main-nav a:not(.btn):last-of-type { border-bottom: none; }
+  .main-nav a.btn {
+    margin-top: 16px;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15.5px;
+  }
 }
 @media (max-width: 1000px) {
   .team-grid { grid-template-columns: repeat(3, 1fr); }
@@ -420,7 +478,7 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
 @media (max-width: 880px) {
   .container { padding: 0 22px; }
   section { padding: 64px 0; }
-  .main-nav a:not(.btn) { display: none; }
+  .main-nav { padding-left: 22px; padding-right: 22px; }
   .hero { padding-top: 54px; }
   .hero-grid { grid-template-columns: 1fr; gap: 44px; }
   .hero-copy { padding-bottom: 0; }

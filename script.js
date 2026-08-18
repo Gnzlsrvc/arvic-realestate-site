@@ -5,7 +5,48 @@ document.addEventListener('DOMContentLoaded', () => {
   initOfficeListings();
   initRevealAnimations();
   initUpdatedStamp();
+  initNavToggle();
 });
+
+// Below 1120px the links collapse into a panel, so they need a way to open.
+function initNavToggle() {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('site-nav');
+  if (!toggle || !nav) return;
+
+  const setOpen = open => {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  };
+
+  toggle.addEventListener('click', () => {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+
+  // Jumping to a section should close the menu behind you
+  nav.addEventListener('click', e => {
+    if (e.target.closest('a')) setOpen(false);
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+
+  // Touch users have no Escape key, so tapping the page should dismiss it too
+  document.addEventListener('click', e => {
+    if (toggle.getAttribute('aria-expanded') !== 'true') return;
+    if (nav.contains(e.target) || toggle.contains(e.target)) return;
+    setOpen(false);
+  });
+
+  // Leaving the panel open while resizing to desktop strands the class
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1120) setOpen(false);
+  });
+}
 
 // The page promises live data, so say plainly when it was last refreshed.
 function initUpdatedStamp() {
@@ -16,6 +57,8 @@ function initUpdatedStamp() {
   document.querySelectorAll('[data-listings-updated]').forEach(el => {
     el.textContent = pretty;
   });
+  // The sentence stays hidden until there is a real date to show
+  document.querySelectorAll('.updated-stamp').forEach(el => el.removeAttribute('hidden'));
 }
 
 const PLACEHOLDER_CLASSES = ['placeholder-1', 'placeholder-2', 'placeholder-3'];

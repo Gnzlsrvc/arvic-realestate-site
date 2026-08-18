@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#ffe512">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +19,11 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">Gonzales Group<span>Ray White Manukau</span></a>
-    <nav class="main-nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="main-nav" id="site-nav">
       <a href="index.html#listings">Listings</a>
       <a href="index.html#about">About</a>
       <a href="index.html#team">Team</a>
@@ -28,7 +36,7 @@
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="hero-kicker">Message sent</p>
-      <h1>Thanks &mdash; I'll be in touch.</h1>
+      <h1>Thanks, I'll be in touch.</h1>
       <p class="hero-lead">Your enquiry has landed in my inbox. I'll get back to you shortly, usually the same day. If it's urgent, call me on <strong>021 106 7411</strong>.</p>
       <div class="hero-actions">
         <a href="index.html" class="btn btn-primary">Back to the site</a>
@@ -40,7 +48,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Arvic Gonzales &mdash; Ray White Manukau. All rights reserved.</p>
+    <p>&copy; 2026 Arvic Gonzales, Ray White Manukau. All rights reserved.</p>
   </div>
 </footer>
 
@@ -49,5 +57,6 @@
      Paste the site token from the Cloudflare dashboard in place of TOKEN and
      uncomment. Left commented so the page never loads a broken script. -->
 <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "TOKEN"}'></script> -->
+<script src="script.js"></script>
 </body>
 </html>
