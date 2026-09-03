@@ -3,6 +3,45 @@
 const LISTINGS_UPDATED = "2026-09-03";
 const OFFICE_LISTINGS = [
   {
+    "id": 3571958,
+    "address": "73A Alabaster Drive, Papatoetoe",
+    "suburb": "Papatoetoe",
+    "status": "Deadline Sale (unless sold prior)",
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "href": "https://rwmanukau.co.nz/MKU50868",
+    "type": "for-sale",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/36b4-H3571958-217451441__1788407449-72298-812648-02.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false
+  },
+  {
+    "id": 3571840,
+    "address": "16 Puriri Road, Manurewa",
+    "suburb": "Manurewa",
+    "status": "Price By Negotiation",
+    "beds": 3,
+    "baths": 1,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU50644",
+    "type": "for-sale",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/627c-H3571840-217216399__1788308175-34109-1-web-or-mls-16PuririRoad10.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false
+  },
+  {
+    "id": 3571833,
+    "address": "180 Surrey Crescent, Grey Lynn",
+    "suburb": "Grey Lynn",
+    "status": "Price by Negotiation",
+    "beds": 5,
+    "baths": 1,
+    "cars": 1,
+    "href": "https://rwmanukau.co.nz/MKU51021",
+    "type": "for-sale",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b63f-H3571833-217433764__1788403640-265828-2577548452668936327.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false
+  },
+  {
     "id": 3571163,
     "address": "405 Redoubt Road, Flat Bush",
     "suburb": "Flat Bush",
@@ -12,7 +51,7 @@ const OFFICE_LISTINGS = [
     "cars": 8,
     "href": "https://rwmangere.co.nz/MGR34074",
     "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/cee7-H3571163-196339617__1775987945-199540-FrontExteriorAerial2-Heroweek3.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/6e31-H3571163-196339616__1775987913-58778-PoolDusk-Heroweek2.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -100,7 +139,7 @@ const OFFICE_LISTINGS = [
     "status": "Auction - On Site  (unless sold prior)",
     "beds": 5,
     "baths": 2,
-    "cars": 0,
+    "cars": 4,
     "href": "https://rwmangerebridge.co.nz/MGB31386",
     "type": "for-sale",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/79c0-H3570584-217178721__1788302146-17862-0-01.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
@@ -142,7 +181,7 @@ const OFFICE_LISTINGS = [
     "cars": 2,
     "href": "https://rwmanukau.co.nz/MKU50891",
     "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/68e3-H3569909-216974483__1788215259-16077-WhatsAppImage2026-08-31at5.22.24PM.jpeg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/5bf3-H3569909-216974483__1788215259-16077-WhatsAppImage2026-08-31at5.22.24PM.jpeg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -578,7 +617,7 @@ const OFFICE_LISTINGS = [
     "id": 3562731,
     "address": "1/14 Kelvin Road, Papakura",
     "suburb": "Papakura",
-    "status": "Fixed Price $509,000",
+    "status": "$509,000",
     "beds": 2,
     "baths": 1,
     "cars": 1,
@@ -679,19 +718,6 @@ const OFFICE_LISTINGS = [
     "mine": false
   },
   {
-    "id": 3560827,
-    "address": "3 Bedrooms - with Double Garage!, Te Kauwhata",
-    "suburb": "Te Kauwhata",
-    "status": "Price by Negotiation",
-    "beds": 3,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU41760",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/80df-H3560827-214786394__1786924594-221383-01Dusk.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
     "id": 3560334,
     "address": "37 Gum Spear Road, Takanini",
     "suburb": "Takanini",
@@ -715,19 +741,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU50436",
     "type": "for-sale",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/860c-H3559954-214511375__1786618995-123593-GeminiGeneratedImagej4h0hgj4h0hgj4h0.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3559195,
-    "address": "25A Allenby Road, Papatoetoe",
-    "suburb": "Papatoetoe",
-    "status": "Auction (unless sold prior)",
-    "beds": 5,
-    "baths": 3,
-    "cars": 7,
-    "href": "https://rwmanukau.co.nz/MKU45941",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/bb9f-H3559195-214323225__1786527409-111995-DSC02304copy.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -939,19 +952,6 @@ const OFFICE_LISTINGS = [
     "mine": false
   },
   {
-    "id": 3557867,
-    "address": "23A Beihlers Road, Weymouth",
-    "suburb": "Weymouth",
-    "status": "Auction (Unless sold prior)",
-    "beds": 3,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmanurewa.co.nz/MAN36674",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/199a-H3557867-213924930__1786397350-20679-ChatGPTImageAug112026092853AM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
     "id": 3557845,
     "address": "Lot 88 Pararekau Island, Karaka",
     "suburb": "Karaka",
@@ -1004,32 +1004,6 @@ const OFFICE_LISTINGS = [
     "mine": false
   },
   {
-    "id": 3557067,
-    "address": "6/11 Lawford Place, Mangere",
-    "suburb": "Mangere",
-    "status": "Price By Negotiation",
-    "beds": 2,
-    "baths": 1,
-    "cars": 1,
-    "href": "https://rwmanukau.co.nz/MKU48078",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/e470-H3557067-213741834__1786317874-36074-02.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3556720,
-    "address": "4 Mill End, Pahurehure",
-    "suburb": "Pahurehure",
-    "status": "Auction (unless sold prior)",
-    "beds": 5,
-    "baths": 2,
-    "cars": 1,
-    "href": "https://rwmanurewa.co.nz/MAN36288",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1070-H3556720-213671714__1786300315-264807-1384110310-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
     "id": 3556654,
     "address": "26A Henriette Place, The Gardens",
     "suburb": "The Gardens",
@@ -1059,7 +1033,7 @@ const OFFICE_LISTINGS = [
     "id": 3556431,
     "address": "95 Gloria Avenue, Te Atatu Peninsula",
     "suburb": "Te Atatu Peninsula",
-    "status": "Price on Application",
+    "status": "$650,000",
     "beds": 3,
     "baths": 3,
     "cars": 2,
@@ -1121,23 +1095,10 @@ const OFFICE_LISTINGS = [
     "mine": false
   },
   {
-    "id": 3555115,
-    "address": "41 Shirley Avenue, Papakura",
-    "suburb": "Papakura",
-    "status": "$759,000",
-    "beds": 3,
-    "baths": 1,
-    "cars": 2,
-    "href": "https://rwmanurewa.co.nz/MAN32502",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f6b9-H3555115-213228083__1785961285-14432-1383764914-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
     "id": 3554849,
     "address": "Lot 3/114 Habourside Drive, Karaka",
     "suburb": "Karaka",
-    "status": "Set Date of Sale (unless sold prior)",
+    "status": "Price on Application",
     "beds": 0,
     "baths": 0,
     "cars": 0,
@@ -1527,13 +1488,13 @@ const OFFICE_LISTINGS = [
     "id": 3547174,
     "address": "34 Greenhaven Avenue, Opaheke",
     "suburb": "Opaheke",
-    "status": "Asking Price $779,000",
+    "status": "Enquiries Over $750,000",
     "beds": 3,
     "baths": 2,
     "cars": 0,
     "href": "https://rwmanurewa.co.nz/MAN36215",
     "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/7723-H3547174-210606524__1784673613-17961-138237139-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/23c1-H3547174-210606524__1784673613-17961-138237139-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -1703,19 +1664,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49450",
     "type": "for-sale",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/2f32-H3541537-1780971193-9-Images21.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3540731,
-    "address": "49 Hyperion Drive, Randwick Park",
-    "suburb": "Randwick Park",
-    "status": "Price By Negotiation",
-    "beds": 3,
-    "baths": 1,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU50157",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/695e-H3540731-209073204__1783583915-116781-018.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -1924,19 +1872,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanurewa.co.nz/MAN36479",
     "type": "for-sale",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8641-H3539609-208788239__1783476434-63538-DSC08147.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3539543,
-    "address": "9D Garth Place, Manurewa",
-    "suburb": "Manurewa",
-    "status": "Asking Price $579,000",
-    "beds": 2,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU49588",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/d274-H3539543-208943265__1783550736-18519-9DGarthPlace.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -3110,32 +3045,6 @@ const OFFICE_LISTINGS = [
     "mine": false
   },
   {
-    "id": 3465079,
-    "address": "5 Becker Drive, Weymouth",
-    "suburb": "Weymouth",
-    "status": "Price By Negotiation",
-    "beds": 3,
-    "baths": 1,
-    "cars": 1,
-    "href": "https://rwmanurewa.co.nz/MAN35803",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/0bb6-H3465079-189012303__1772050839-14930-136130428-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3452832,
-    "address": "2/3 Wellesley Road, Mangere Bridge",
-    "suburb": "Mangere Bridge",
-    "status": "Price by Negotiation",
-    "beds": 3,
-    "baths": 1,
-    "cars": 3,
-    "href": "https://rwmangerebridge.co.nz/MGB31201",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/6d78-H3452832-186714075__1770852681-39843-007.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
     "id": 3452752,
     "address": "39 Walters Road, Mount Wellington",
     "suburb": "Mount Wellington",
@@ -3185,19 +3094,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU43555",
     "type": "for-sale",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/6855-H3450800-213510134__1786075563-81367-02Dusk-Copy.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3447390,
-    "address": "387 Ardmore Quarry Road, Ardmore",
-    "suburb": "Ardmore",
-    "status": "Asking Price $1,495,000",
-    "beds": 1,
-    "baths": 1,
-    "cars": 8,
-    "href": "https://rwmanurewa.co.nz/MAN35718",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/0622-H3447390-185064614__1769986811-209389-DJI202601291218080097D.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -3578,6 +3474,34 @@ const OFFICE_LISTINGS = [
     "mine": false
   },
   {
+    "id": 3560827,
+    "address": "68 Raranga Road, Te Kauwhata",
+    "suburb": "Te Kauwhata",
+    "status": "Price by Negotiation",
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU41760",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/80df-H3560827-214786394__1786924594-221383-01Dusk.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-03"
+  },
+  {
+    "id": 3555115,
+    "address": "41 Shirley Avenue, Papakura",
+    "suburb": "Papakura",
+    "status": "$759,000",
+    "beds": 3,
+    "baths": 1,
+    "cars": 2,
+    "href": "https://rwmanurewa.co.nz/MAN32502",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f6b9-H3555115-213228083__1785961285-14432-1383764914-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-03"
+  },
+  {
     "id": 3558582,
     "address": "84 Redcastle Drive, East Tamaki",
     "suburb": "East Tamaki",
@@ -3592,6 +3516,34 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-09-02"
   },
   {
+    "id": 3557867,
+    "address": "23A Beihlers Road, Weymouth",
+    "suburb": "Weymouth",
+    "status": "Auction (Unless sold prior)",
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "href": "https://rwmanurewa.co.nz/MAN36674",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/199a-H3557867-213924930__1786397350-20679-ChatGPTImageAug112026092853AM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-02"
+  },
+  {
+    "id": 3556720,
+    "address": "4 Mill End, Pahurehure",
+    "suburb": "Pahurehure",
+    "status": "Auction (unless sold prior)",
+    "beds": 5,
+    "baths": 2,
+    "cars": 1,
+    "href": "https://rwmanurewa.co.nz/MAN36288",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1070-H3556720-213671714__1786300315-264807-1384110310-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-02"
+  },
+  {
     "id": 3543021,
     "address": "25D Wellesley Road, Mangere Bridge",
     "suburb": "Mangere Bridge",
@@ -3602,6 +3554,48 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmangerebridge.co.nz/MGB31353",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/46e6-H3543021-209410294__1783985585-36283-0-02.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-02"
+  },
+  {
+    "id": 3540731,
+    "address": "49 Hyperion Drive, Randwick Park",
+    "suburb": "Randwick Park",
+    "status": "Price By Negotiation",
+    "beds": 3,
+    "baths": 1,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU50157",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/695e-H3540731-209073204__1783583915-116781-018.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-02"
+  },
+  {
+    "id": 3559195,
+    "address": "25A Allenby Road, Papatoetoe",
+    "suburb": "Papatoetoe",
+    "status": "Auction (unless sold prior)",
+    "beds": 5,
+    "baths": 3,
+    "cars": 7,
+    "href": "https://rwmanukau.co.nz/MKU45941",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/bb9f-H3559195-214323225__1786527409-111995-DSC02304copy.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-02"
+  },
+  {
+    "id": 3447390,
+    "address": "387 Ardmore Quarry Road, Ardmore",
+    "suburb": "Ardmore",
+    "status": "Asking Price $1,495,000",
+    "beds": 1,
+    "baths": 1,
+    "cars": 8,
+    "href": "https://rwmanurewa.co.nz/MAN35718",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/0622-H3447390-185064614__1769986811-209389-DJI202601291218080097D.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-09-02"
   },
@@ -3644,6 +3638,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU46612",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/6a3f-H3397368-169858630__1761603509-16895-DSC00726.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-08-28"
+  },
+  {
+    "id": 3557067,
+    "address": "6/11 Lawford Place, Mangere",
+    "suburb": "Mangere",
+    "status": "Price By Negotiation",
+    "beds": 2,
+    "baths": 1,
+    "cars": 1,
+    "href": "https://rwmanukau.co.nz/MKU48078",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/e470-H3557067-213741834__1786317874-36074-02.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-08-28"
   },
@@ -4166,20 +4174,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-08-18"
   },
   {
-    "id": 3558474,
-    "address": "Lot 1/20 Franklin Avenue, Papatoetoe",
-    "suburb": "Papatoetoe",
-    "status": "Price By Negotiation",
-    "beds": 3,
-    "baths": 2,
-    "cars": 1,
-    "href": "https://rwmanukau.co.nz/MKU50313",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/85bb-H3558474-214210287__1786494705-45144-WhatsAppImage2026-08-12at12.31.06.jpeg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-08-18"
-  },
-  {
     "id": 3540880,
     "address": "16 Mail Avenue, Weymouth",
     "suburb": "Weymouth",
@@ -4194,20 +4188,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-08-17"
   },
   {
-    "id": 3512508,
-    "address": "30 Westminster Street, New Windsor",
-    "suburb": "New Windsor",
-    "status": "Asking Price $1,129,000",
-    "beds": 3,
-    "baths": 2,
-    "cars": 7,
-    "href": "https://rwmanukau.co.nz/MKU49261",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/4dfd-H3512508-206563992__1782025226-174111-1000306549.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-08-17"
-  },
-  {
     "id": 3543311,
     "address": "34H Arawa Street, New Lynn",
     "suburb": "New Lynn",
@@ -4218,6 +4198,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49566",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1461-H3543311-208457861__1783310342-72136-FrontAerialHERO1.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-08-17"
+  },
+  {
+    "id": 3512508,
+    "address": "30 Westminster Street, New Windsor",
+    "suburb": "New Windsor",
+    "status": "Asking Price $1,129,000",
+    "beds": 3,
+    "baths": 2,
+    "cars": 7,
+    "href": "https://rwmanukau.co.nz/MKU49261",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/4dfd-H3512508-206563992__1782025226-174111-1000306549.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-08-17"
   },
@@ -4278,20 +4272,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-08-13"
   },
   {
-    "id": 3555697,
-    "address": "12 Farnborough Crescent, Mangere",
-    "suburb": "Mangere",
-    "status": "Auction (unless sold prior)",
-    "beds": 3,
-    "baths": 1,
-    "cars": 4,
-    "href": "https://rwmanukau.co.nz/MKU50244",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/62b0-H3555697-213472497__1786064726-40313-12FarnboroughCrescent.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-08-13"
-  },
-  {
     "id": 3543334,
     "address": "10/50 Gray Avenue, Mangere East",
     "suburb": "Mangere East",
@@ -4302,6 +4282,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU50233",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3a05-H3543334-201836210__1779077922-78644-02.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-08-13"
+  },
+  {
+    "id": 3555697,
+    "address": "12 Farnborough Crescent, Mangere",
+    "suburb": "Mangere",
+    "status": "Auction (unless sold prior)",
+    "beds": 3,
+    "baths": 1,
+    "cars": 4,
+    "href": "https://rwmanukau.co.nz/MKU50244",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/62b0-H3555697-213472497__1786064726-40313-12FarnboroughCrescent.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-08-13"
   },
@@ -4460,20 +4454,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-08-06"
   },
   {
-    "id": 3541536,
-    "address": "67 Calluna Crescent, Totara Heights",
-    "suburb": "Totara Heights",
-    "status": "Auction (unless sold prior)",
-    "beds": 4,
-    "baths": 3,
-    "cars": 4,
-    "href": "https://rwmanukau.co.nz/MKU48796",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f0a3-H3541536-209224351__1783895232-27213-Resize33.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-08-05"
-  },
-  {
     "id": 3523222,
     "address": "5 Woolaston Place, Flat Bush",
     "suburb": "Flat Bush",
@@ -4484,6 +4464,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49336",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ee08-H3523222-206140153__1781658883-53862-PAINTEDBRICK.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-08-05"
+  },
+  {
+    "id": 3541536,
+    "address": "67 Calluna Crescent, Totara Heights",
+    "suburb": "Totara Heights",
+    "status": "Auction (unless sold prior)",
+    "beds": 4,
+    "baths": 3,
+    "cars": 4,
+    "href": "https://rwmanukau.co.nz/MKU48796",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f0a3-H3541536-209224351__1783895232-27213-Resize33.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-08-05"
   },
@@ -4614,20 +4608,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-07-31"
   },
   {
-    "id": 3524004,
-    "address": "9 Harriet Johnston Drive, Pokeno",
-    "suburb": "Pokeno",
-    "status": "$849,000",
-    "beds": 3,
-    "baths": 2,
-    "cars": 4,
-    "href": "https://rwmanurewa.co.nz/MAN34444",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/28f2-H3524004-207344338__1782429212-32432-ChatGPTImageJun262026111324AM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-07-30"
-  },
-  {
     "id": 3540331,
     "address": "3 Linda Place, Otara",
     "suburb": "Otara",
@@ -4638,6 +4618,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU50106",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/4797-H3540331-212434617__1785451913-30872-Soldboardpic3LIndaPl.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-07-30"
+  },
+  {
+    "id": 3524004,
+    "address": "9 Harriet Johnston Drive, Pokeno",
+    "suburb": "Pokeno",
+    "status": "$849,000",
+    "beds": 3,
+    "baths": 2,
+    "cars": 4,
+    "href": "https://rwmanurewa.co.nz/MAN34444",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/28f2-H3524004-207344338__1782429212-32432-ChatGPTImageJun262026111324AM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-07-30"
   },
@@ -4754,6 +4748,34 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-07-29"
   },
   {
+    "id": 3540921,
+    "address": "35 Carisbrook Crescent, Papakura",
+    "suburb": "Papakura",
+    "status": "Auction (unless sold prior)",
+    "beds": 4,
+    "baths": 2,
+    "cars": 8,
+    "href": "https://rwmanukau.co.nz/MKU49447",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/9d96-H3540921-209031996__1783567998-64774-DSC09606.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-07-29"
+  },
+  {
+    "id": 3540137,
+    "address": "9 Joshua Place, Weymouth",
+    "suburb": "Weymouth",
+    "status": "Auction (unless sold prior)",
+    "beds": 4,
+    "baths": 2,
+    "cars": 4,
+    "href": "https://rwmanukau.co.nz/MKU49830",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ac62-H3540137-209065038__1783576317-99411-29July2026GameDayLogo4.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-07-29"
+  },
+  {
     "id": 3539686,
     "address": "2 Awakino Place, Manurewa",
     "suburb": "Manurewa",
@@ -4792,34 +4814,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49580",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/e3fb-H3530845-206780808__1782164154-21096-035Open2viewID609297-90JeffsRoad.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-07-29"
-  },
-  {
-    "id": 3540921,
-    "address": "35 Carisbrook Crescent, Papakura",
-    "suburb": "Papakura",
-    "status": "Auction (unless sold prior)",
-    "beds": 4,
-    "baths": 2,
-    "cars": 8,
-    "href": "https://rwmanukau.co.nz/MKU49447",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/9d96-H3540921-209031996__1783567998-64774-DSC09606.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-07-29"
-  },
-  {
-    "id": 3540137,
-    "address": "9 Joshua Place, Weymouth",
-    "suburb": "Weymouth",
-    "status": "Auction (unless sold prior)",
-    "beds": 4,
-    "baths": 2,
-    "cars": 4,
-    "href": "https://rwmanukau.co.nz/MKU49830",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ac62-H3540137-209065038__1783576317-99411-29July2026GameDayLogo4.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-07-29"
   },
@@ -5566,20 +5560,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-07-06"
   },
   {
-    "id": 3521029,
-    "address": "2/80 Kenderdine Road, Papatoetoe",
-    "suburb": "Papatoetoe",
-    "status": "Asking Price $715,000",
-    "beds": 3,
-    "baths": 1,
-    "cars": 1,
-    "href": "https://rwmanukau.co.nz/MKU49366",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/27eb-H3521029-204017717__1780388792-115324-2-80KenderdineRoadPapatoetoeIMW-1.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-07-06"
-  },
-  {
     "id": 3507534,
     "address": "16 Hamilton Road, Papatoetoe",
     "suburb": "Papatoetoe",
@@ -5636,6 +5616,20 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-07-03"
   },
   {
+    "id": 3518491,
+    "address": "34B Landon Avenue, Mangere East",
+    "suburb": "Mangere East",
+    "status": "Price by Negotiation",
+    "beds": 3,
+    "baths": 1,
+    "cars": 0,
+    "href": "https://rwmanukau.co.nz/MKU49162",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/4fd4-H3518491-203043964__1779759028-46867-front.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-07-03"
+  },
+  {
     "id": 3519552,
     "address": "7 Hope Place, Otara",
     "suburb": "Otara",
@@ -5650,18 +5644,18 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-07-03"
   },
   {
-    "id": 3518491,
-    "address": "34B Landon Avenue, Mangere East",
-    "suburb": "Mangere East",
-    "status": "Price by Negotiation",
+    "id": 3516343,
+    "address": "3 McKenzie Road, Mangere Bridge",
+    "suburb": "Mangere Bridge",
+    "status": "Price By Negotiation",
     "beds": 3,
     "baths": 1,
-    "cars": 0,
-    "href": "https://rwmanukau.co.nz/MKU49162",
+    "cars": 4,
+    "href": "https://rwmangerebridge.co.nz/MGB31158",
     "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/4fd4-H3518491-203043964__1779759028-46867-front.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/fc50-H3516343-203432767__1779920569-15821-0-11.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
-    "soldDate": "2026-07-03"
+    "soldDate": "2026-07-02"
   },
   {
     "id": 3450792,
@@ -6252,20 +6246,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-17"
   },
   {
-    "id": 3511651,
-    "address": "64 Hamill Road, Otara",
-    "suburb": "Otara",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 4,
-    "baths": 1,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU48035",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8e49-H3511651-199042410__1777509089-46086-136657381-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-17"
-  },
-  {
     "id": 3469556,
     "address": "94A Naylors Drive, Mangere",
     "suburb": "Mangere",
@@ -6276,20 +6256,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmangere.co.nz/MGR33560",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/94c1-H3469556-190594360__1772753381-26074-1362579515-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-17"
-  },
-  {
-    "id": 3515805,
-    "address": "2/10 Hamilton Road, Papatoetoe",
-    "suburb": "Papatoetoe",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 3,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU46731",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/c4dc-H3515805-203098353__1779767807-267509-DJI202605250611220607D.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-17"
   },
@@ -6318,6 +6284,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49226",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/69d7-H3514837-202981447__1779748168-28920-1374269213-325-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-17"
+  },
+  {
+    "id": 3515805,
+    "address": "2/10 Hamilton Road, Papatoetoe",
+    "suburb": "Papatoetoe",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU46731",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/c4dc-H3515805-203098353__1779767807-267509-DJI202605250611220607D.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-17"
   },
@@ -6420,20 +6400,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-12"
   },
   {
-    "id": 3478176,
-    "address": "1/1A Clark Road, Pahurehure",
-    "suburb": "Pahurehure",
-    "status": "Asking Price $699,000",
-    "beds": 2,
-    "baths": 1,
-    "cars": 1,
-    "href": "https://rwmanurewa.co.nz/MAN33703",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/044a-H3478176-193033489__1773884863-49866-ChatGPTImageMar192026024732PM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-11"
-  },
-  {
     "id": 3469828,
     "address": "41 Lippiatt Road, Otahuhu",
     "suburb": "Otahuhu",
@@ -6444,6 +6410,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmangere.co.nz/MGR33849",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f255-H3469828-190989546__1773012210-26917-A7408947.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-11"
+  },
+  {
+    "id": 3478176,
+    "address": "1/1A Clark Road, Pahurehure",
+    "suburb": "Pahurehure",
+    "status": "Asking Price $699,000",
+    "beds": 2,
+    "baths": 1,
+    "cars": 1,
+    "href": "https://rwmanurewa.co.nz/MAN33703",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/044a-H3478176-193033489__1773884863-49866-ChatGPTImageMar192026024732PM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-11"
   },
@@ -6532,20 +6512,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-10"
   },
   {
-    "id": 3512314,
-    "address": "13 Gibbons Road, Weymouth",
-    "suburb": "Weymouth",
-    "status": "Auction (unless sold prior)",
-    "beds": 3,
-    "baths": 1,
-    "cars": 3,
-    "href": "https://rwmanurewa.co.nz/MAN35977",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/0a70-H3512314-202325863__1779311289-6902-1373839816-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-10"
-  },
-  {
     "id": 3507486,
     "address": "26 Paulownia Place, Totara Heights",
     "suburb": "Totara Heights",
@@ -6556,6 +6522,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49042",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3459-H3507486-201287920__1778648752-80104-1371276832-325-17photoprintedit1.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-10"
+  },
+  {
+    "id": 3512314,
+    "address": "13 Gibbons Road, Weymouth",
+    "suburb": "Weymouth",
+    "status": "Auction (unless sold prior)",
+    "beds": 3,
+    "baths": 1,
+    "cars": 3,
+    "href": "https://rwmanurewa.co.nz/MAN35977",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/0a70-H3512314-202325863__1779311289-6902-1373839816-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-10"
   },
@@ -6602,20 +6582,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-09"
   },
   {
-    "id": 3513298,
-    "address": "2a Ronaki Road, Otahuhu",
-    "suburb": "Otahuhu",
-    "status": "Asking Price $849,000",
-    "beds": 3,
-    "baths": 1,
-    "cars": 0,
-    "href": "https://rwmanukau.co.nz/MKU49272",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/74ca-H3513298-202485904__1779345940-108007-2ARonakiRoadthuhuIMW-18.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-09"
-  },
-  {
     "id": 3511633,
     "address": "1/16 Trimdon Street, Randwick Park",
     "suburb": "Randwick Park",
@@ -6626,6 +6592,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU49255",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b92f-H3511633-202221572__1779246622-62711-02.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-09"
+  },
+  {
+    "id": 3513298,
+    "address": "2a Ronaki Road, Otahuhu",
+    "suburb": "Otahuhu",
+    "status": "Asking Price $849,000",
+    "beds": 3,
+    "baths": 1,
+    "cars": 0,
+    "href": "https://rwmanukau.co.nz/MKU49272",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/74ca-H3513298-202485904__1779345940-108007-2ARonakiRoadthuhuIMW-18.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-09"
   },
@@ -6742,20 +6722,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-05"
   },
   {
-    "id": 3509234,
-    "address": "149 Everglade Drive, Totara Heights",
-    "suburb": "Totara Heights",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 5,
-    "baths": 3,
-    "cars": 5,
-    "href": "https://rwmanukau.co.nz/MKU47058",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b5b8-H3509234-201595417__1778820084-83978-048Open2viewID607914-149EvergladeDrive.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-03"
-  },
-  {
     "id": 3507477,
     "address": "26 Thompson Terrace, Manurewa",
     "suburb": "Manurewa",
@@ -6784,6 +6750,20 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-03"
   },
   {
+    "id": 3509234,
+    "address": "149 Everglade Drive, Totara Heights",
+    "suburb": "Totara Heights",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 5,
+    "baths": 3,
+    "cars": 5,
+    "href": "https://rwmanukau.co.nz/MKU47058",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b5b8-H3509234-201595417__1778820084-83978-048Open2viewID607914-149EvergladeDrive.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-03"
+  },
+  {
     "id": 3508150,
     "address": "1/21 Scott Avenue, Mangere Bridge",
     "suburb": "Mangere Bridge",
@@ -6794,20 +6774,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU48964",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/73f0-H3508150-201700407__1779058074-19142-GameDayLogo202622.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-03"
-  },
-  {
-    "id": 3510018,
-    "address": "109 Rosier Road, Glen Eden",
-    "suburb": "Glen Eden",
-    "status": "Price By Negotiation",
-    "beds": 3,
-    "baths": 1,
-    "cars": 0,
-    "href": "https://rwmanukau.co.nz/MKU49192",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f569-H3510018-201454465__1778731077-67617-Images15.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-03"
   },
@@ -6864,6 +6830,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmangere.co.nz/MGR33828",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3a99-H3506404-201200598__1778633709-38457-GameDayLogo20267.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-03"
+  },
+  {
+    "id": 3510018,
+    "address": "109 Rosier Road, Glen Eden",
+    "suburb": "Glen Eden",
+    "status": "Price By Negotiation",
+    "beds": 3,
+    "baths": 1,
+    "cars": 0,
+    "href": "https://rwmanukau.co.nz/MKU49192",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f569-H3510018-201454465__1778731077-67617-Images15.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-03"
   },
@@ -6952,20 +6932,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-03"
   },
   {
-    "id": 3505848,
-    "address": "1/110 Porchester Road, Takanini",
-    "suburb": "Takanini",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 3,
-    "baths": 1,
-    "cars": 0,
-    "href": "https://rwmanukau.co.nz/MKU49045",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8408-H3505848-200983284__1778543725-29729-GameDayLogo20262.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-06-03"
-  },
-  {
     "id": 3508167,
     "address": "8 Aldo Place, Clover Park",
     "suburb": "Clover Park",
@@ -6994,16 +6960,16 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-03"
   },
   {
-    "id": 3512408,
-    "address": "106B Browns Road, Manurewa",
-    "suburb": "Manurewa",
+    "id": 3505848,
+    "address": "1/110 Porchester Road, Takanini",
+    "suburb": "Takanini",
     "status": "Auction (Unless Sold Prior)",
-    "beds": 2,
+    "beds": 3,
     "baths": 1,
     "cars": 0,
-    "href": "https://rwmanukau.co.nz/MKU32358",
+    "href": "https://rwmanukau.co.nz/MKU49045",
     "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/5a8e-H3512408-202395687__1779324208-49699-JSP41311-b.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8408-H3505848-200983284__1778543725-29729-GameDayLogo20262.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-06-03"
   },
@@ -7022,6 +6988,34 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-06-03"
   },
   {
+    "id": 3512408,
+    "address": "106B Browns Road, Manurewa",
+    "suburb": "Manurewa",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 2,
+    "baths": 1,
+    "cars": 0,
+    "href": "https://rwmanukau.co.nz/MKU32358",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/5a8e-H3512408-202395687__1779324208-49699-JSP41311-b.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-03"
+  },
+  {
+    "id": 3571407,
+    "address": "5 Convair Crescent, Mangere",
+    "suburb": "Mangere",
+    "status": "Price by Negotiation",
+    "beds": 3,
+    "baths": 1,
+    "cars": 0,
+    "href": "https://rwmanukau.co.nz/MKU48194",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b9e7-H3571407-192915220__1773868938-8858-DJI0505A.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-06-02"
+  },
+  {
     "id": 3517183,
     "address": "11 Te Whaiti Road, Te Kauwhata",
     "suburb": "Te Kauwhata",
@@ -7036,20 +7030,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-05-29"
   },
   {
-    "id": 3464075,
-    "address": "1/52 Jellicoe Road, Manurewa",
-    "suburb": "Manurewa",
-    "status": "$760,000",
-    "beds": 3,
-    "baths": 1,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU48187",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/690d-H3464075-189503470__1772397369-17001-A03.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-05-29"
-  },
-  {
     "id": 3481553,
     "address": "13 Tamatea Avenue, Point England",
     "suburb": "Point England",
@@ -7060,6 +7040,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU48549",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/72aa-H3481553-194800296__1774924957-263015-136614602-328-17photoprintV2.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-05-29"
+  },
+  {
+    "id": 3464075,
+    "address": "1/52 Jellicoe Road, Manurewa",
+    "suburb": "Manurewa",
+    "status": "$760,000",
+    "beds": 3,
+    "baths": 1,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU48187",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/690d-H3464075-189503470__1772397369-17001-A03.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-05-29"
   },
@@ -8464,16 +8458,16 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-04-17"
   },
   {
-    "id": 3479183,
-    "address": "16 Framalda Place, Conifer Grove",
-    "suburb": "Conifer Grove",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 5,
-    "baths": 3,
-    "cars": 3,
-    "href": "https://raywhite.co.nz/MKU23036",
+    "id": 3493363,
+    "address": "7/4 Ara Kataraina, Mangere",
+    "suburb": "Mangere",
+    "status": "Price By Negotiation",
+    "beds": 1,
+    "baths": 1,
+    "cars": 0,
+    "href": "https://rwmangere.co.nz/MGR33892",
     "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8b6b-H3479183-194066288__1774476930-15400-DSC08086.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/a301-H3493363-195405957__1775444611-43345-74AraKatarainaRd9.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-04-17"
   },
@@ -8492,16 +8486,16 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-04-17"
   },
   {
-    "id": 3493363,
-    "address": "7/4 Ara Kataraina, Mangere",
-    "suburb": "Mangere",
-    "status": "Price By Negotiation",
-    "beds": 1,
-    "baths": 1,
-    "cars": 0,
-    "href": "https://rwmangere.co.nz/MGR33892",
+    "id": 3479183,
+    "address": "16 Framalda Place, Conifer Grove",
+    "suburb": "Conifer Grove",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 5,
+    "baths": 3,
+    "cars": 3,
+    "href": "https://raywhite.co.nz/MKU23036",
     "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/a301-H3493363-195405957__1775444611-43345-74AraKatarainaRd9.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8b6b-H3479183-194066288__1774476930-15400-DSC08086.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-04-17"
   },
@@ -8562,20 +8556,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-04-15"
   },
   {
-    "id": 3475681,
-    "address": "11 Sovereign Street, Flat Bush",
-    "suburb": "Flat Bush",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 4,
-    "baths": 3,
-    "cars": 3,
-    "href": "https://rwmanukau.co.nz/MKU48143",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b6bc-H3475681-193163296__1773958529-27276-136431972-328-17photoprintEdit.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-04-14"
-  },
-  {
     "id": 3473604,
     "address": "72B Coxhead Road, Manurewa",
     "suburb": "Manurewa",
@@ -8586,6 +8566,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanurewa.co.nz/MAN35892",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/a7b7-H3473604-192760850__1773794289-38786-1364525615-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-04-14"
+  },
+  {
+    "id": 3475681,
+    "address": "11 Sovereign Street, Flat Bush",
+    "suburb": "Flat Bush",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 4,
+    "baths": 3,
+    "cars": 3,
+    "href": "https://rwmanukau.co.nz/MKU48143",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b6bc-H3475681-193163296__1773958529-27276-136431972-328-17photoprintEdit.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-04-14"
   },
@@ -8604,20 +8598,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-04-14"
   },
   {
-    "id": 3478459,
-    "address": "47 Kuhanui Drive, Karaka",
-    "suburb": "Karaka",
-    "status": "Auction (unless sold prior)",
-    "beds": 4,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmangere.co.nz/MGR32313",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1297-H3478459-193896623__1774400592-41922-GeminiGeneratedImagejqeonyjqeonyjqeo.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-04-14"
-  },
-  {
     "id": 3530710,
     "address": "4 Mckean Avenue, Manurewa",
     "suburb": "Manurewa",
@@ -8628,6 +8608,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanurewa.co.nz/MAN35939",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/67e9-H3530710-193823780__1774390130-26951-136565916-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-04-14"
+  },
+  {
+    "id": 3478459,
+    "address": "47 Kuhanui Drive, Karaka",
+    "suburb": "Karaka",
+    "status": "Auction (unless sold prior)",
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "href": "https://rwmangere.co.nz/MGR32313",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1297-H3478459-193896623__1774400592-41922-GeminiGeneratedImagejqeonyjqeonyjqeo.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-04-14"
   },
@@ -8716,20 +8710,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-04-08"
   },
   {
-    "id": 3473075,
-    "address": "7 Sheriff Place, Randwick Park",
-    "suburb": "Randwick Park",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 3,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU48424",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1b08-H3473075-192396386__1773700889-19996-7SheriffPlaceRandwickParkIMW-14.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-04-08"
-  },
-  {
     "id": 3456099,
     "address": "9 Von Sturmer Street, Mangere East",
     "suburb": "Mangere East",
@@ -8740,6 +8720,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU48001",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/b61e-H3456099-187404090__1771284230-26833-039Open2viewID604031-9VonSturmerStreet.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-04-08"
+  },
+  {
+    "id": 3473075,
+    "address": "7 Sheriff Place, Randwick Park",
+    "suburb": "Randwick Park",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU48424",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1b08-H3473075-192396386__1773700889-19996-7SheriffPlaceRandwickParkIMW-14.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-04-08"
   },
@@ -8884,20 +8878,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-03-30"
   },
   {
-    "id": 3466696,
-    "address": "10 Neralee Court, Conifer Grove",
-    "suburb": "Conifer Grove",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 4,
-    "baths": 2,
-    "cars": 0,
-    "href": "https://rwmanukau.co.nz/MKU48112",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/a3fd-H3466696-189847077__1772494981-30015-DJI202602241726020466D.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-03-28"
-  },
-  {
     "id": 3450123,
     "address": "149 Princes Street East, Otahuhu",
     "suburb": "Otahuhu",
@@ -8908,6 +8888,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU47955",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/34b6-H3450123-186178435__1770619686-116434-230915-149PrincesStreetEastOtahuhuAlison-303-Edit1920px.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-03-28"
+  },
+  {
+    "id": 3466696,
+    "address": "10 Neralee Court, Conifer Grove",
+    "suburb": "Conifer Grove",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 4,
+    "baths": 2,
+    "cars": 0,
+    "href": "https://rwmanukau.co.nz/MKU48112",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/a3fd-H3466696-189847077__1772494981-30015-DJI202602241726020466D.JPG?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-03-28"
   },
@@ -8980,6 +8974,20 @@ const OFFICE_LISTINGS = [
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/fc19-H3391829-169162600__1761095566-59928-134884255-328-17photoprint.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-03-26"
+  },
+  {
+    "id": 3466496,
+    "address": "765 Swanson Road, Swanson",
+    "suburb": "Swanson",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 3,
+    "baths": 1,
+    "cars": 4,
+    "href": "https://rwmanukau.co.nz/MKU48170",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3e4c-H3466496-190943956__1773005518-23607-GameDayLogo202646.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-03-25"
   },
   {
     "id": 3465324,
@@ -9094,16 +9102,44 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-03-25"
   },
   {
-    "id": 3466496,
-    "address": "765 Swanson Road, Swanson",
-    "suburb": "Swanson",
+    "id": 3460527,
+    "address": "22 Mcinnes Road, Weymouth",
+    "suburb": "Weymouth",
     "status": "Auction (Unless Sold Prior)",
     "beds": 3,
     "baths": 1,
-    "cars": 4,
-    "href": "https://rwmanukau.co.nz/MKU48170",
+    "cars": 8,
+    "href": "https://rwmanukau.co.nz/MKU47599",
     "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3e4c-H3466496-190943956__1773005518-23607-GameDayLogo202646.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/bc61-H3460527-189303154__1772149919-29395-25March20261.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-03-25"
+  },
+  {
+    "id": 3460406,
+    "address": "556 Redoubt Road, Flat Bush",
+    "suburb": "Flat Bush",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 5,
+    "baths": 3,
+    "cars": 3,
+    "href": "https://rwmanukau.co.nz/MKU48042",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/87df-H3460406-188825954__1771982167-44766-556RedoubtRoadFlatBush.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-03-25"
+  },
+  {
+    "id": 3433606,
+    "address": "824 Redoubt Road, Flat Bush",
+    "suburb": "Flat Bush",
+    "status": "Auction (unless sold prior)",
+    "beds": 5,
+    "baths": 4,
+    "cars": 4,
+    "href": "https://rwmanukau.co.nz/MKU46685",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/905f-H3433606-190047863__1772572210-20441-1361679511-325-17photoprintedit.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-03-25"
   },
@@ -9146,20 +9182,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanukau.co.nz/MKU48009",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/bb0d-H3465194-190246710__1772615926-116480-GameDayLogo202617.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-03-25"
-  },
-  {
-    "id": 3433606,
-    "address": "824 Redoubt Road, Flat Bush",
-    "suburb": "Flat Bush",
-    "status": "Auction (unless sold prior)",
-    "beds": 5,
-    "baths": 4,
-    "cars": 4,
-    "href": "https://rwmanukau.co.nz/MKU46685",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/905f-H3433606-190047863__1772572210-20441-1361679511-325-17photoprintedit.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-03-25"
   },
