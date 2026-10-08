@@ -417,12 +417,17 @@ section { padding: 92px 0; scroll-margin-top: 76px; }
 .contact-text p { margin-bottom: 4px; }
 .contact-text strong { color: var(--paper); font-weight: 700; }
 .contact-form { display: flex; flex-direction: column; gap: 13px; }
-.contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea, .contact-form select {
   padding: 15px; border: 2px solid rgba(255,255,255,.55); background: transparent;
   color: var(--paper); border-radius: 2px; font-family: var(--font-body); font-size: 16px;
 }
 .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(255,255,255,.78); }
-.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--yellow); }
+.contact-form select {
+  appearance: none; cursor: pointer; padding-right: 42px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 16px center;
+}
+.contact-form select option { color: #111; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { outline: none; border-color: var(--yellow); }
 .contact-form button {
   align-self: flex-start; margin-top: 5px;
   background: var(--yellow); color: var(--ink); border-color: var(--yellow);

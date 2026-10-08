@@ -6,7 +6,42 @@ document.addEventListener('DOMContentLoaded', () => {
   initRevealAnimations();
   initUpdatedStamp();
   initNavToggle();
+  initContactForm();
 });
+
+// The form emails Arvic through FormSubmit. It also sends a copy to Atlas, the
+// team's CRM, so every enquiry becomes a lead automatically. The Atlas copy is
+// best-effort: if it fails or is slow, the email still goes as normal.
+const ATLAS_ENQUIRY_URL = 'https://urmkuvopcbnphjmwzmhe.supabase.co/functions/v1/website-enquiry';
+
+function initContactForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+  let sent = false;
+
+  form.addEventListener('submit', async e => {
+    if (sent) return;              // second pass: let the browser submit to FormSubmit
+    e.preventDefault();
+    const val = name => (form.elements[name]?.value || '').trim();
+    const intent = val('Looking to');
+    const body = JSON.stringify({
+      name: val('Name'),
+      email: val('Email'),
+      phone: val('Phone'),
+      message: val('Message'),
+      intent: /sell|appraisal/i.test(intent) && !/buy/i.test(intent) ? 'sell' : intent,
+      _honey: val('_honey'),
+    });
+    try {
+      await Promise.race([
+        fetch(ATLAS_ENQUIRY_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body, keepalive: true }),
+        new Promise(resolve => setTimeout(resolve, 2500)),
+      ]);
+    } catch { /* Atlas unreachable: the email below still goes */ }
+    sent = true;
+    form.submit();
+  });
+}
 
 // Below 1120px the links collapse into a panel, so they need a way to open.
 function initNavToggle() {
