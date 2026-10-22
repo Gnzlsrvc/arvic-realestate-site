@@ -173,8 +173,8 @@ const OFFICE_LISTINGS = [
   },
   {
     "id": 3599818,
-    "address": "239B Robertson Road, Mangere",
-    "suburb": "Mangere",
+    "address": "239B Robertson Road, Mangere East",
+    "suburb": "Mangere East",
     "status": "Set Date of Sale",
     "beds": 3,
     "baths": 2,
@@ -766,7 +766,7 @@ const OFFICE_LISTINGS = [
     "cars": 2,
     "href": "https://rwmanukau.co.nz/MKU51430",
     "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/18ba-H3591142-222314462__1791338068-257699-DJI202610061056050088D-fixed.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/a10f-H3591142-225056739__1792702614-24157-DJIall0019D-fixed.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -1352,19 +1352,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmangerebridge.co.nz/MGB31421",
     "type": "for-sale",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/19b1-H3584199-219936034__1790044580-58650-0-01.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false
-  },
-  {
-    "id": 3584182,
-    "address": "143E Alfriston Road, Manurewa",
-    "suburb": "Manurewa",
-    "status": "Enquires over $950,000",
-    "beds": 4,
-    "baths": 2,
-    "cars": 4,
-    "href": "https://rwmanurewa.co.nz/MAN36346",
-    "type": "for-sale",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/68eb-H3584182-219820385__1790023883-5095-FXPH0695copy.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false
   },
   {
@@ -4242,6 +4229,20 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-10-22"
   },
   {
+    "id": 3584182,
+    "address": "143E Alfriston Road, Manurewa",
+    "suburb": "Manurewa",
+    "status": "Enquires over $950,000",
+    "beds": 4,
+    "baths": 2,
+    "cars": 4,
+    "href": "https://rwmanurewa.co.nz/MAN36346",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/68eb-H3584182-219820385__1790023883-5095-FXPH0695copy.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-10-22"
+  },
+  {
     "id": 3583246,
     "address": "50 Totara Meadows Court, Manukau",
     "suburb": "Manukau",
@@ -4872,20 +4873,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-10-02"
   },
   {
-    "id": 3575002,
-    "address": "118 Hall Avenue, Favona",
-    "suburb": "Favona",
-    "status": "Set Date of Sale (unless sold prior)",
-    "beds": 4,
-    "baths": 2,
-    "cars": 4,
-    "href": "https://rwmangerebridge.co.nz/MGB30563",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8c4c-H3575002-218194989__1788916714-43771-0-02.jpeg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-10-02"
-  },
-  {
     "id": 3427397,
     "address": "9 Akeake Lane, Manurewa",
     "suburb": "Manurewa",
@@ -4896,6 +4883,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanurewa.co.nz/MAN35659",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/cb04-H3427397-194695420__1774907976-26692-ChatGPTImageMar312026105926AM.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-10-02"
+  },
+  {
+    "id": 3575002,
+    "address": "118 Hall Avenue, Favona",
+    "suburb": "Favona",
+    "status": "Set Date of Sale (unless sold prior)",
+    "beds": 4,
+    "baths": 2,
+    "cars": 4,
+    "href": "https://rwmangerebridge.co.nz/MGB30563",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8c4c-H3575002-218194989__1788916714-43771-0-02.jpeg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-10-02"
   },
@@ -5460,6 +5461,20 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-09-09"
   },
   {
+    "id": 3479253,
+    "address": "19B Tributary Parade, Karaka",
+    "suburb": "Karaka",
+    "status": "Price by Negotiation",
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU48580",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/674c-H3479253-194122015__1774485711-38676-4462643350357685504.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-09-09"
+  },
+  {
     "id": 3563605,
     "address": "139e Wyllie Road, Papatoetoe",
     "suburb": "Papatoetoe",
@@ -5484,20 +5499,6 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmangerebridge.co.nz/MGB31396",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3049-H3563349-215397428__1787194387-57120-1.00RESERVE1.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-09-09"
-  },
-  {
-    "id": 3479253,
-    "address": "19B Tributary Parade, Karaka",
-    "suburb": "Karaka",
-    "status": "Price by Negotiation",
-    "beds": 3,
-    "baths": 2,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU48580",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/674c-H3479253-194122015__1774485711-38676-4462643350357685504.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-09-09"
   },
@@ -5880,20 +5881,6 @@ const OFFICE_LISTINGS = [
     "soldDate": "2026-08-26"
   },
   {
-    "id": 3553977,
-    "address": "16 Serrano Place, Clover Park",
-    "suburb": "Clover Park",
-    "status": "Auction (Unless Sold Prior)",
-    "beds": 3,
-    "baths": 1,
-    "cars": 2,
-    "href": "https://rwmanukau.co.nz/MKU50480",
-    "type": "sold",
-    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/83ef-H3553977-213466834__1786062969-48183-16SerranoPlace.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
-    "mine": false,
-    "soldDate": "2026-08-26"
-  },
-  {
     "id": 3554711,
     "address": "25 Sterling Avenue, Manurewa",
     "suburb": "Manurewa",
@@ -5904,6 +5891,20 @@ const OFFICE_LISTINGS = [
     "href": "https://rwmanurewa.co.nz/MAN36518",
     "type": "sold",
     "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/bc18-H3554711-219861376__1790031956-21892-SOLDBY3.png?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
+    "mine": false,
+    "soldDate": "2026-08-26"
+  },
+  {
+    "id": 3553977,
+    "address": "16 Serrano Place, Clover Park",
+    "suburb": "Clover Park",
+    "status": "Auction (Unless Sold Prior)",
+    "beds": 3,
+    "baths": 1,
+    "cars": 2,
+    "href": "https://rwmanukau.co.nz/MKU50480",
+    "type": "sold",
+    "image": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/83ef-H3553977-213466834__1786062969-48183-16SerranoPlace.jpg?anchor=middlecenter&mode=crop&scale=both&width=760&height=500&quality=82&format=webp",
     "mine": false,
     "soldDate": "2026-08-26"
   },
